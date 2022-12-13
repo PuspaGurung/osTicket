@@ -257,10 +257,10 @@ html {
   -ms-text-size-adjust: 62.5;
   /* 2 */
   box-sizing: border-box; }
-  @media (min-width: 80em) {
+  @media (min-width: 115em) {
     html {
       font-size: 62.5%; } }
-  @media (max-width: 80em) {
+  @media (max-width: 115em) {
     html {
       font-size: 56.25%; } }
   @media (max-width: 65em) {

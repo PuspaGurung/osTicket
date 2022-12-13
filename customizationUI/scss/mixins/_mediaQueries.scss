@@ -35,18 +35,18 @@
     }
 
     @if $breakpoint==laptop {
-        @media (max-width: 80em) {
+        @media (max-width: 115em) {
             @content;
         }
 
-        //Screen Width <= 1280px
+        //Screen Width <= 1840px
     }
 
     @if $breakpoint==big-screen {
-        @media (min-width: 80em) {
+        @media (min-width: 115em) {
             @content;
         }
 
-        //Screen Width > 1280px)
+        //Screen Width > 1840px)
     }
 }
