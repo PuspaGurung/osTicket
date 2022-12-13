@@ -534,8 +534,13 @@ ul#nav {
         line-height: 2.5rem;
         margin-bottom: 2rem; }
   #content #breadcrumbs {
-    background-color: #ffe400;
+    background-color: #51c53e;
+    color: #ffffff;
     padding: 1rem 2rem !important; }
+    #content #breadcrumbs a {
+      margin: 5px; }
+      #content #breadcrumbs a:hover {
+        color: #ffe400; }
   #content .buttons {
     text-align: left !important; }
 

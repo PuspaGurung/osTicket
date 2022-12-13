@@ -238,8 +238,15 @@ ul#nav {
     }
 
     #breadcrumbs {
-        background-color: $color-secondary--1;
+        background-color: $color-primary--1;
+        color: $color-best--1;
         padding: 1rem 2rem !important;
+        a {
+            margin: 5px;
+            &:hover {
+                color: $color-secondary--1;
+            }
+        }
     }
     .buttons {
         text-align: left !important;
