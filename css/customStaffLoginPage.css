@@ -79,14 +79,46 @@ input[type="reset"],
 a.popup-dialog,
 .action-button {
   background-color: #666666;
-  color: #ffffff; }
+  color: #ffffff !important; }
   button[type="reset"]:hover,
   button[name="reset"]:hover,
   input[type="reset"]:hover,
   a.popup-dialog:hover,
   .action-button:hover {
     background-color: #666666;
-    color: #ffffff; }
+    color: #ffffff !important; }
+  button[type="reset"] i,
+  button[name="reset"] i,
+  input[type="reset"] i,
+  a.popup-dialog i,
+  .action-button i {
+    margin-top: 8px !important;
+    border-left: none !important; }
+
+input,
+select,
+.select2-selection {
+  padding: 1rem 1rem !important;
+  height: 4.5rem !important;
+  outline: none;
+  border: 1px solid #eee !important;
+  border-bottom-color: #51c53e !important;
+  display: block;
+  color: #333;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+  outline: none !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  -webkit-border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+  -ms-border-radius: 0 !important;
+  -o-border-radius: 0 !important; }
+  input:focus,
+  select:focus,
+  .select2-selection:focus {
+    border-color: #51c53e !important; }
 
 html {
   /**

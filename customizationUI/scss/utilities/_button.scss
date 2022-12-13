@@ -45,9 +45,13 @@ input[type="reset"],
 a.popup-dialog,
 .action-button {
     background-color: $color-support--2;
-    color: $color-best--1;
+    color: $color-best--1 !important;
     &:hover {
         background-color: $color-support--2;
-        color: $color-best--1;
+        color: $color-best--1 !important;
+    }
+    i {
+        margin-top: 8px !important;
+        border-left: none !important;
     }
 }
