@@ -1,0 +1,53 @@
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+.button,
+a.popup-dialog,
+.action-button {
+    height: 4.5rem !important;
+    line-height: 4.3rem;
+    padding: 0 1.5rem !important;
+    text-align: center;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    box-sizing: border-box;
+    box-shadow: none !important;
+    border: none !important;
+    @include borderRadious(0 !important);
+
+    &:hover {
+        @include boxShadowPrimary;
+    }
+}
+
+button[type="submit"],
+input[type="submit"],
+.button {
+    background-color: $color-primary--1 !important;
+    color: $color-best--1;
+}
+button.red,
+input[name="cancel"],
+input.close {
+    background-color: $color-danger--1;
+    color: $color-best--1;
+    &:hover {
+        background-color: $color-danger--1 !important;
+        color: $color-best--1 !important;
+    }
+}
+button[type="reset"],
+button[name="reset"],
+input[type="reset"],
+a.popup-dialog,
+.action-button {
+    background-color: $color-support--2;
+    color: $color-best--1;
+    &:hover {
+        background-color: $color-support--2;
+        color: $color-best--1;
+    }
+}
