@@ -274,7 +274,27 @@ img {
 
 a {
   text-decoration: none;
-  color: inherit; }
+  color: inherit;
+  margin: 0; }
+
+#header {
+  padding: 0 10%;
+  height: auto;
+  display: flex;
+  flex-flow: row-reverse;
+  align-items: center;
+  justify-content: space-between; }
+  #header #logo {
+    display: inline-block;
+    width: 20rem;
+    height: auto;
+    line-height: 0; }
+    #header #logo img {
+      max-height: none;
+      max-width: 33rem;
+      width: auto;
+      height: auto;
+      vertical-align: middle; }
 
 ul#nav {
   margin: 0;
