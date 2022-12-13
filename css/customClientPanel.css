@@ -275,3 +275,37 @@ img {
 a {
   text-decoration: none;
   color: inherit; }
+
+ul#nav {
+  margin: 0;
+  padding: 1.5rem 10%;
+  background: #333;
+  border: none;
+  box-shadow: none !important;
+  height: auto; }
+  ul#nav li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: inline;
+    margin-right: 1rem; }
+    ul#nav li a {
+      text-transform: uppercase;
+      height: auto;
+      display: inline-block;
+      border: 0;
+      color: #ffffff;
+      margin: 0;
+      line-height: 0;
+      padding: 0 1rem 0 3.5rem;
+      height: 5rem;
+      line-height: 5rem;
+      position: relative;
+      border-radius: 0;
+      -webkit-border-radius: 0;
+      -moz-border-radius: 0;
+      -ms-border-radius: 0;
+      -o-border-radius: 0; }
+      ul#nav li a.active, ul#nav li a:hover {
+        background-color: #000;
+        color: #ffffff; }
