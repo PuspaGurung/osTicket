@@ -237,6 +237,10 @@ table {
   color: #ffffff;
   border: none; }
 
+form p,
+form .buttons {
+  text-align: left; }
+
 html {
   /**
       * size is measure in the basis of REMs, (pretty easier for responsive layout)
