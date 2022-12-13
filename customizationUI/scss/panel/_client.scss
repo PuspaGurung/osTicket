@@ -120,3 +120,128 @@ ul#nav {
         }
     }
 }
+
+//  BODY
+#content {
+    margin: 0;
+    padding: 3rem 10%;
+    h1 {
+        color: $color-dark--1;
+        font-weight: 500;
+        margin-bottom: 1rem;
+    }
+    .content {
+        padding: 0;
+        border: none;
+        background-color: transparent;
+    }
+    .sidebar {
+        width: 100%;
+        section {
+            border: 0;
+            padding: 2rem;
+            border: 1px solid #eee;
+            background-color: #f2f2f2 !important;
+            border-radius: 4px;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            -ms-border-radius: 4px;
+            -o-border-radius: 4px;
+
+            .header {
+                margin-bottom: 5px;
+                position: relative;
+                padding-left: 2rem;
+                margin-bottom: 1rem;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+                padding-bottom: 1rem;
+                position: relative;
+                &:before {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    top: 37%;
+                    width: 5px;
+                    height: 2rem;
+                    background-color: #51c53e;
+                    @include transform(translate(0, -50%));
+                }
+            }
+            a {
+                display: inline-block;
+                width: 100%;
+                border-bottom: 1px solid rgba($color-danger--1, 0.1);
+                padding: 1rem 0;
+                margin-bottom: 0;
+                &:hover {
+                    color: $color-primary--1;
+                }
+            }
+            div:last-child {
+                a {
+                    border-bottom: none;
+                }
+            }
+        }
+    }
+    #landing_page {
+        display: flex;
+        flex-flow: row-reverse;
+        align-items: flex-start;
+        justify-content: space-between;
+        .sidebar {
+            width: 30%;
+
+            .front-page-button {
+                display: none;
+            }
+        }
+        .main-content {
+            width: 70%;
+            .search-form {
+                padding: 2rem;
+                background-color: $color-best--3;
+
+                input[type="text"] {
+                    width: 80%;
+                }
+                button {
+                    width: 20%;
+                    padding-left: 2rem;
+                }
+            }
+        }
+        .thread-body {
+            padding: 2rem 0;
+            h1 {
+                font-size: 4rem;
+                margin-bottom: 3rem;
+            }
+            p {
+                font-size: 1.7rem;
+                line-height: 2.5rem;
+                margin-bottom: 2rem;
+            }
+        }
+    }
+}
+
+// KNOWLEDGE BASED
+ul#kb {
+    margin-bottom: 3rem;
+    li {
+        background: none !important;
+    }
+    h4 {
+        a {
+            font-size: 1.7rem !important;
+        }
+    }
+}
+
+// OPEN A NEW TICKET
+#ticketForm {
+    background-color: $color-best--3;
+    padding: 3rem;
+    margin-top: 1rem;
+}

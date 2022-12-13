@@ -29,8 +29,8 @@ input[type="submit"],
 .button,
 a.popup-dialog,
 .action-button {
-  height: 4.5rem !important;
-  line-height: 4.3rem;
+  height: 5rem !important;
+  line-height: 4.8rem;
   padding: 0 1.5rem !important;
   text-align: center;
   outline: none;
@@ -99,7 +99,7 @@ input,
 select,
 .select2-selection {
   padding: 1rem 1rem !important;
-  height: 4.5rem !important;
+  height: 5rem !important;
   outline: none;
   border: 1px solid #eee !important;
   border-bottom-color: #51c53e !important;
@@ -276,6 +276,13 @@ a {
   text-decoration: none;
   color: inherit;
   margin: 0; }
+  a:hover {
+    color: #51c53e;
+    border-bottom: none !important; }
+
+h1 {
+  font-size: 3rem;
+  line-height: 4rem; }
 
 #header {
   padding: 0 10%;
@@ -391,3 +398,98 @@ ul#nav {
       ul#nav li a.active, ul#nav li a:hover {
         background-color: #000;
         color: #ffffff; }
+
+#content {
+  margin: 0;
+  padding: 3rem 10%; }
+  #content h1 {
+    color: #000;
+    font-weight: 500;
+    margin-bottom: 1rem; }
+  #content .content {
+    padding: 0;
+    border: none;
+    background-color: transparent; }
+  #content .sidebar {
+    width: 100%; }
+    #content .sidebar section {
+      border: 0;
+      padding: 2rem;
+      border: 1px solid #eee;
+      background-color: #f2f2f2 !important;
+      border-radius: 4px;
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      -ms-border-radius: 4px;
+      -o-border-radius: 4px; }
+      #content .sidebar section .header {
+        margin-bottom: 5px;
+        position: relative;
+        padding-left: 2rem;
+        margin-bottom: 1rem;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        padding-bottom: 1rem;
+        position: relative; }
+        #content .sidebar section .header:before {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 37%;
+          width: 5px;
+          height: 2rem;
+          background-color: #51c53e;
+          transform: translate(0, -50%);
+          -webkit-transform: translate(0, -50%);
+          -moz-transform: translate(0, -50%);
+          -ms-transform: translate(0, -50%);
+          -o-transform: translate(0, -50%); }
+      #content .sidebar section a {
+        display: inline-block;
+        width: 100%;
+        border-bottom: 1px solid rgba(223, 85, 74, 0.1);
+        padding: 1rem 0;
+        margin-bottom: 0; }
+        #content .sidebar section a:hover {
+          color: #51c53e; }
+      #content .sidebar section div:last-child a {
+        border-bottom: none; }
+  #content #landing_page {
+    display: flex;
+    flex-flow: row-reverse;
+    align-items: flex-start;
+    justify-content: space-between; }
+    #content #landing_page .sidebar {
+      width: 30%; }
+      #content #landing_page .sidebar .front-page-button {
+        display: none; }
+    #content #landing_page .main-content {
+      width: 70%; }
+      #content #landing_page .main-content .search-form {
+        padding: 2rem;
+        background-color: #eee; }
+        #content #landing_page .main-content .search-form input[type="text"] {
+          width: 80%; }
+        #content #landing_page .main-content .search-form button {
+          width: 20%;
+          padding-left: 2rem; }
+    #content #landing_page .thread-body {
+      padding: 2rem 0; }
+      #content #landing_page .thread-body h1 {
+        font-size: 4rem;
+        margin-bottom: 3rem; }
+      #content #landing_page .thread-body p {
+        font-size: 1.7rem;
+        line-height: 2.5rem;
+        margin-bottom: 2rem; }
+
+ul#kb {
+  margin-bottom: 3rem; }
+  ul#kb li {
+    background: none !important; }
+  ul#kb h4 a {
+    font-size: 1.7rem !important; }
+
+#ticketForm {
+  background-color: #eee;
+  padding: 3rem;
+  margin-top: 1rem; }
