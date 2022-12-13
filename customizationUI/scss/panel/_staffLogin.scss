@@ -1,0 +1,57 @@
+#loginBody {
+    background-color: $color-best--2;
+    #brickwall,
+    #blur {
+        display: none;
+    }
+    #loginBox {
+        @include boxShadow(none !important);
+        background-color: $color-best--1;
+        width: 30% !important;
+        left: 50% !important;
+        top: 50% !important;
+        margin: 0 !important;
+        @include transform(translate(-50%, -50%));
+        padding: 4rem;
+        &::after {
+            content: none;
+        }
+        form {
+            width: 100%;
+            fieldset {
+                margin: 0;
+            }
+            input,
+            button {
+                width: 100%;
+            }
+        }
+        #logo {
+            a {
+                display: block;
+                height: auto;
+            }
+        }
+        #login-message {
+            font-size: 1.6rem;
+            color: $color-dark--2;
+        }
+
+        #reset-link {
+            margin-bottom: 1rem;
+            display: block !important;
+        }
+    }
+    #company {
+        .content {
+            background-color: transparent;
+            @include borderRadious(0);
+            color: $color-dark--2;
+            text-shadow: none;
+            @include boxShadow(none !important);
+        }
+    }
+}
+#poweredBy {
+    display: none !important;
+}
