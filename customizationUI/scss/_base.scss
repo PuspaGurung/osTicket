@@ -90,16 +90,23 @@ ol[class],
 img {
     width: auto;
 }
+h1 {
+    line-height: 4rem;
+}
+h2 {
+}
+h3 {
+}
 
-a {
+a,
+.link {
+    max-height: none !important;
+    max-width: none !important;
     text-decoration: none;
     color: inherit;
     margin: 0;
     &:hover {
         color: $color-primary--1;
+        border-bottom: none;
     }
-}
-
-h1 {
-    line-height: 4rem;
 }

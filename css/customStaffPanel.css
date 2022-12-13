@@ -217,13 +217,25 @@ input[size="5"] {
 table {
   width: 100%; }
   .table td,
-  table td {
+  .table th,
+  table td,
+  table th {
     padding: 1rem !important;
     vertical-align: middle !important;
     border: 1px solid #e2e5e8 !important; }
     .table td hr,
-    table td hr {
+    .table th hr,
+    table td hr,
+    table th hr {
       display: none; }
+  .table th,
+  table th {
+    padding: 1rem !important; }
+
+#ticketTable caption {
+  background-color: #36bc21;
+  color: #ffffff;
+  border: none; }
 
 html {
   /**
@@ -298,12 +310,17 @@ ol[class],
 img {
   width: auto; }
 
-a {
+h1 {
+  line-height: 4rem; }
+
+a,
+.link {
+  max-height: none !important;
+  max-width: none !important;
   text-decoration: none;
   color: inherit;
   margin: 0; }
-  a:hover {
-    color: #51c53e; }
-
-h1 {
-  line-height: 4rem; }
+  a:hover,
+  .link:hover {
+    color: #51c53e;
+    border-bottom: none; }

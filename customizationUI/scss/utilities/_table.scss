@@ -1,12 +1,25 @@
 .table,
 table {
     width: 100%;
-    td {
+
+    td,
+    th {
         padding: 1rem !important;
         vertical-align: middle !important;
         border: 1px solid #e2e5e8 !important;
         hr {
             display: none;
         }
+    }
+    th {
+        padding: 1rem !important;
+    }
+}
+
+#ticketTable {
+    caption {
+        background-color: $color-primary--2;
+        color: $color-best--1;
+        border: none;
     }
 }
