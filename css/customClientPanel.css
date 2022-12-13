@@ -60,7 +60,7 @@ button[type="submit"],
 input[type="submit"],
 .button {
   background-color: #51c53e !important;
-  color: #ffffff; }
+  color: #ffffff !important; }
 
 button.red,
 input[name="cancel"],
@@ -97,13 +97,14 @@ a.popup-dialog,
 
 input,
 select,
-.select2-selection {
+.select2-selection,
+textarea,
+.redactor-styles {
   padding: 1rem 1rem !important;
   height: 5rem !important;
   outline: none;
-  border: 1px solid #eee !important;
+  border: 1px solid #f2f2f2 !important;
   border-bottom-color: #51c53e !important;
-  display: block;
   color: #333;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
@@ -117,8 +118,18 @@ select,
   -o-border-radius: 0 !important; }
   input:focus,
   select:focus,
-  .select2-selection:focus {
+  .select2-selection:focus,
+  textarea:focus,
+  .redactor-styles:focus {
     border-color: #51c53e !important; }
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  min-width: 50%; }
+
+.redactor-styles-on {
+  border: none !important; }
 
 #overlay {
   background-color: rgba(0, 0, 0, 0.7);
@@ -188,9 +199,8 @@ select,
 
 #footer {
   min-height: 5vh;
-  background-color: #eee;
+  background-color: #f2f2f2;
   position: absolute;
-  bottom: -5vh;
   width: 100%;
   padding: 3rem 0; }
   #footer p {
@@ -198,6 +208,18 @@ select,
     color: #000; }
   #footer #poweredBy {
     display: none !important; }
+
+.table,
+table {
+  width: 100%; }
+  .table td,
+  table td {
+    padding: 1rem !important;
+    vertical-align: middle !important;
+    border: 1px solid #e2e5e8 !important; }
+    .table td hr,
+    table td hr {
+      display: none; }
 
 html {
   /**
@@ -277,11 +299,9 @@ a {
   color: inherit;
   margin: 0; }
   a:hover {
-    color: #51c53e;
-    border-bottom: none !important; }
+    color: #51c53e; }
 
 h1 {
-  font-size: 3rem;
   line-height: 4rem; }
 
 #header {
@@ -402,6 +422,11 @@ ul#nav {
 #content {
   margin: 0;
   padding: 3rem 10%; }
+  #content .form-header {
+    background-color: #666666;
+    background-color: #36bc21;
+    color: #ffffff;
+    padding: 1rem 1.5rem; }
   #content h1 {
     color: #000;
     font-weight: 500;
@@ -412,16 +437,13 @@ ul#nav {
     background-color: transparent; }
   #content .sidebar {
     width: 100%; }
+    #content .sidebar .searchbar {
+      margin-bottom: 2rem; }
     #content .sidebar section {
       border: 0;
       padding: 2rem;
       border: 1px solid #eee;
-      background-color: #f2f2f2 !important;
-      border-radius: 4px;
-      -webkit-border-radius: 4px;
-      -moz-border-radius: 4px;
-      -ms-border-radius: 4px;
-      -o-border-radius: 4px; }
+      background-color: #f2f2f2 !important; }
       #content .sidebar section .header {
         margin-bottom: 5px;
         position: relative;
@@ -466,7 +488,12 @@ ul#nav {
       width: 70%; }
       #content #landing_page .main-content .search-form {
         padding: 2rem;
-        background-color: #eee; }
+        background-color: #f2f2f2; }
+        #content #landing_page .main-content .search-form form {
+          display: flex;
+          align-items: center;
+          padding: 0;
+          margin: 0; }
         #content #landing_page .main-content .search-form input[type="text"] {
           width: 80%; }
         #content #landing_page .main-content .search-form button {
@@ -481,6 +508,11 @@ ul#nav {
         font-size: 1.7rem;
         line-height: 2.5rem;
         margin-bottom: 2rem; }
+  #content #breadcrumbs {
+    background-color: #ffe400;
+    padding: 1rem 2rem !important; }
+  #content .buttons {
+    text-align: left !important; }
 
 ul#kb {
   margin-bottom: 3rem; }
@@ -489,7 +521,67 @@ ul#kb {
   ul#kb h4 a {
     font-size: 1.7rem !important; }
 
+.faq-content {
+  margin-bottom: 2rem; }
+  .faq-content .faded {
+    font-size: 1.4rem;
+    font-style: italic; }
+  .faq-content .thread-body p {
+    font-size: 1.6rem;
+    line-height: 2rem; }
+
 #ticketForm {
-  background-color: #eee;
+  background-color: #f2f2f2;
   padding: 3rem;
-  margin-top: 1rem; }
+  margin-top: 1rem;
+  margin-bottom: 4rem; }
+
+form#clientLogin {
+  background-color: #f2f2f2;
+  padding: 3rem;
+  border: none;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none; }
+  form#clientLogin > div {
+    display: flex !important; }
+  form#clientLogin .login-box {
+    width: 40%;
+    border-right: 1px solid rgba(0, 0, 0, 0.09);
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    padding: 0 3rem 0 0; }
+    form#clientLogin .login-box input {
+      width: 100% !important; }
+  form#clientLogin a {
+    padding: 1rem;
+    margin: 1rem 0 0 1rem;
+    border: 1px solid #51c53e;
+    color: #51c53e;
+    display: inline-block; }
+    form#clientLogin a:hover {
+      background-color: #51c53e;
+      color: #ffffff;
+      margin: 1rem 0 0 1rem; }
+  form#clientLogin .instructions {
+    width: 50%;
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start; }
+
+#content #ticketSearchForm {
+  padding: 0 !important;
+  margin: 0;
+  display: flex;
+  align-items: center; }
+  #content #ticketSearchForm .pull-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 1; }

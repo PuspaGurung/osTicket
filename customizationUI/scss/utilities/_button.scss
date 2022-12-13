@@ -27,7 +27,7 @@ button[type="submit"],
 input[type="submit"],
 .button {
     background-color: $color-primary--1 !important;
-    color: $color-best--1;
+    color: $color-best--1 !important;
 }
 button.red,
 input[name="cancel"],

@@ -60,7 +60,7 @@ button[type="submit"],
 input[type="submit"],
 .button {
   background-color: #51c53e !important;
-  color: #ffffff; }
+  color: #ffffff !important; }
 
 button.red,
 input[name="cancel"],
@@ -97,13 +97,14 @@ a.popup-dialog,
 
 input,
 select,
-.select2-selection {
+.select2-selection,
+textarea,
+.redactor-styles {
   padding: 1rem 1rem !important;
   height: 5rem !important;
   outline: none;
-  border: 1px solid #eee !important;
+  border: 1px solid #f2f2f2 !important;
   border-bottom-color: #51c53e !important;
-  display: block;
   color: #333;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
@@ -117,8 +118,18 @@ select,
   -o-border-radius: 0 !important; }
   input:focus,
   select:focus,
-  .select2-selection:focus {
+  .select2-selection:focus,
+  textarea:focus,
+  .redactor-styles:focus {
     border-color: #51c53e !important; }
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  min-width: 50%; }
+
+.redactor-styles-on {
+  border: none !important; }
 
 #overlay {
   background-color: rgba(0, 0, 0, 0.7);
@@ -188,9 +199,8 @@ select,
 
 #footer {
   min-height: 5vh;
-  background-color: #eee;
+  background-color: #f2f2f2;
   position: absolute;
-  bottom: -5vh;
   width: 100%;
   padding: 3rem 0; }
   #footer p {
@@ -198,6 +208,18 @@ select,
     color: #000; }
   #footer #poweredBy {
     display: none !important; }
+
+.table,
+table {
+  width: 100%; }
+  .table td,
+  table td {
+    padding: 1rem !important;
+    vertical-align: middle !important;
+    border: 1px solid #e2e5e8 !important; }
+    .table td hr,
+    table td hr {
+      display: none; }
 
 html {
   /**
@@ -277,9 +299,7 @@ a {
   color: inherit;
   margin: 0; }
   a:hover {
-    color: #51c53e;
-    border-bottom: none !important; }
+    color: #51c53e; }
 
 h1 {
-  font-size: 3rem;
   line-height: 4rem; }

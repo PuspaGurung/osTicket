@@ -1,12 +1,13 @@
 input,
 select,
-.select2-selection {
+.select2-selection,
+textarea,
+.redactor-styles {
     padding: 1rem 1rem !important;
     height: 5rem !important;
     outline: none;
     border: 1px solid $color-best--3 !important;
     border-bottom-color: $color-primary--1 !important;
-    display: block;
     color: $color-dark--2;
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
@@ -18,4 +19,13 @@ select,
     &:focus {
         border-color: $color-primary--1 !important;
     }
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    min-width: 50%;
+}
+
+.redactor-styles-on {
+    border: none !important;
 }
