@@ -1,8 +1,8 @@
 {
   "scripts": {
-    "adminLoginPage:sass": "node-sass  customizationUI/scss/mainAdminLogin.scss css/adminLoginPage.css -w",
-    "clientPanel:sass": "node-sass  customizationUI/scss/mainClientPanel.scss css/clientPanel.css -w",
-    "adminPanel:sass": "node-sass  customizationUI/scss/mainAdminPanel.scss css/adminPanel.css -w",
+    "adminLoginPage:sass": "node-sass  customizationUI/scss/mainStaffLogin.scss css/customStaffLoginPage.css -w",
+    "clientPanel:sass": "node-sass  customizationUI/scss/mainClientPanel.scss css/customClientPanel.css -w",
+    "adminPanel:sass": "node-sass  customizationUI/scss/mainStaffPanel.scss css/customStaffPanel.css -w",
     "compile:sass": "concurrently --kill-others  \"yarn run adminLoginPage:sass\" \"yarn run adminPanel:sass\" \"yarn run clientPanel:sass\" -w"
   },
   "dependencies": {

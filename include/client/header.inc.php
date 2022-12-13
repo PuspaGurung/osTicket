@@ -53,7 +53,7 @@ if (($lang = Internationalization::getCurrentLanguage())) {
         <link type="text/css" rel="stylesheet" href="<?php echo ROOT_PATH; ?>css/select2.min.css">
 
         <!-- CUSTOMIZE STYLE -->
-        <link type="text/css" rel="stylesheet" href="<?php echo ROOT_PATH; ?>css/clientPanel.css?<?= time() ?>" />
+        <link type="text/css" rel="stylesheet" href="<?php echo ROOT_PATH; ?>css/customClientPanel.css?<?= time() ?>" />
 
         <!-- Favicons -->
         <link rel="icon" type="image/png" href="<?php echo ROOT_PATH ?>images/oscar-favicon-32x32.png" sizes="32x32" />
