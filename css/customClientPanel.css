@@ -295,6 +295,68 @@ a {
       width: auto;
       height: auto;
       vertical-align: middle; }
+  #header a:hover {
+    border-bottom: none; }
+  #header .pull-right,
+  #header .flush-right {
+    display: flex;
+    justify-content: flex-end; }
+    #header .pull-right p,
+    #header .flush-right p {
+      width: auto;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      color: #ffffff;
+      padding: 1rem 2rem; }
+      #header .pull-right p:first-child,
+      #header .flush-right p:first-child {
+        background-color: #51c53e;
+        margin-right: 5px;
+        color: #ffe400;
+        font-weight: 500; }
+        #header .pull-right p:first-child a,
+        #header .flush-right p:first-child a {
+          margin-left: 1rem;
+          color: #ffffff;
+          font-weight: 400;
+          position: relative; }
+          #header .pull-right p:first-child a:hover::after,
+          #header .flush-right p:first-child a:hover::after {
+            content: "";
+            height: 1px;
+            width: 100%;
+            background-color: #333;
+            position: absolute;
+            top: 100%;
+            left: 0; }
+      #header .pull-right p:last-child,
+      #header .flush-right p:last-child {
+        background-color: #333; }
+      #header .pull-right p a,
+      #header .flush-right p a {
+        position: relative;
+        margin-right: 2rem; }
+        #header .pull-right p a::after,
+        #header .flush-right p a::after {
+          content: "";
+          height: 2rem;
+          width: 1px;
+          background-color: rgba(255, 255, 255, 0.3);
+          top: 50%;
+          right: -1rem;
+          position: absolute;
+          transform: translate(0, -50%);
+          -webkit-transform: translate(0, -50%);
+          -moz-transform: translate(0, -50%);
+          -ms-transform: translate(0, -50%);
+          -o-transform: translate(0, -50%); }
+        #header .pull-right p a:last-child,
+        #header .flush-right p a:last-child {
+          margin-right: 0; }
+          #header .pull-right p a:last-child::after,
+          #header .flush-right p a:last-child::after {
+            content: none; }
 
 ul#nav {
   margin: 0;

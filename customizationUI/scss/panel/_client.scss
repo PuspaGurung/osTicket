@@ -19,6 +19,69 @@
             vertical-align: middle;
         }
     }
+    a:hover {
+        border-bottom: none;
+    }
+    .pull-right,
+    .flush-right {
+        display: flex;
+        justify-content: flex-end;
+        p {
+            width: auto;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            color: $color-best--1;
+            padding: 1rem 2rem;
+
+            &:first-child {
+                background-color: $color-primary--1;
+                margin-right: 5px;
+                color: $color-secondary--1;
+                font-weight: 500;
+                a {
+                    margin-left: 1rem;
+                    color: $color-best--1;
+                    font-weight: 400;
+                    position: relative;
+                    &:hover {
+                        &::after {
+                            content: "";
+                            height: 1px;
+                            width: 100%;
+                            background-color: $color-dark--2;
+                            position: absolute;
+                            top: 100%;
+                            left: 0;
+                        }
+                    }
+                }
+            }
+            &:last-child {
+                background-color: $color-dark--2;
+            }
+            a {
+                position: relative;
+                margin-right: 2rem;
+                &::after {
+                    content: "";
+                    height: 2rem;
+                    width: 1px;
+                    background-color: rgba(255, 255, 255, 0.3);
+                    top: 50%;
+                    right: -1rem;
+                    position: absolute;
+                    @include transform(translate(0, -50%));
+                }
+                &:last-child {
+                    margin-right: 0;
+                    &::after {
+                        content: none;
+                    }
+                }
+            }
+        }
+    }
 }
 // CLIENT NAVIGATION
 ul#nav {
