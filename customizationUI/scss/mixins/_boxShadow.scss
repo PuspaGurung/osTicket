@@ -1,0 +1,11 @@
+@mixin boxShadow($property) {
+    -webkit-box-shadow: $property;
+    -moz-box-shadow: $property;
+    box-shadow: $property;
+}
+
+@mixin boxShadowPrimary {
+    -webkit-box-shadow: 0 2px 4px rgba($color-dark--1, 0.08), 0 4px 12px rgba($color-dark--1, 0.08) !important;
+    -moz-box-shadow: 0 2px 4px rgba($color-dark--1, 0.08), 0 4px 12px rgba($color-dark--1, 0.08) !important;
+    box-shadow: 0 2px 4px rgba($color-dark--1, 0.08), 0 4px 12px rgba($color-dark--1, 0.08) !important;
+}

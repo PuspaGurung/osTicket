@@ -1,0 +1,100 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("../../fonts/Montserrat-Bold.woff2") format("woff2"), url("../../fonts/Montserrat-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../../fonts/Montserrat-Regular.woff2") format("woff2"), url("../../fonts/Montserrat-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+/*----------------------------
+*** MEDIA-QUERY 
+** Break points-
+* 0 - 600px: phone,
+* 600px - 769px : ipad,
+* 769px - 1040px: ipad-pro,
+* 1040px - 1280px : laptop,
+* 1280px > : large -screen 
+------------------------------
+*/
+html {
+  /**
+      * size is measure in the basis of REMs, (pretty easier for responsive layout)
+      * default font size 16px = 100% (i.e 1rem = 16px)
+      * here default font size set to 62.5%, (i.e 1rem = 10px),
+      * this makes easier to calculate rem in the basis of 10px = 1rem,
+      * e.g 13px = (13/10)rem = 1.3rem  ( >> this is super easy then calcualte 13px = 13/16 = 0.8125rem )
+         */
+  font-size: 62.5;
+  /* 1 */
+  -webkit-text-size-adjust: 62.5;
+  /* 2 */
+  -ms-text-size-adjust: 62.5;
+  /* 2 */
+  box-sizing: border-box; }
+  @media (min-width: 80em) {
+    html {
+      font-size: 62.5%; } }
+  @media (max-width: 80em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 65em) {
+    html {
+      font-size: 46.88%; } }
+  @media (max-width: 49em) {
+    html {
+      font-size: 43.75%; } }
+  @media (max-width: 37.5em) {
+    html {
+      font-size: 40%; } }
+
+body {
+  position: relative;
+  font-weight: normal;
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  font-family: "Montserrat", sans-serif; }
+
+main {
+  position: relative; }
+
+/* Box sizing rules */
+*,
+*::before,
+*::after,
+body,
+html {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+::-webkit-input-placeholder {
+  /* Edge */ }
+
+:-ms-input-placeholder {
+  /* Internet Explorer */ }
+
+/* Remove default padding */
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class],
+* {
+  padding: 0;
+  list-style: none; }
+
+img {
+  width: auto; }
+
+a {
+  text-decoration: none;
+  color: inherit; }

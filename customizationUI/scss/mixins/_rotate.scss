@@ -1,0 +1,6 @@
+@mixin rotate($property) {
+    -webkit-transform: rotate($property);
+    -moz-transform: rotate($property);
+    -o-transform: rotate($property);
+    transform: rotate($property);
+}
