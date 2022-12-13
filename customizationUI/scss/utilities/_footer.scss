@@ -1,0 +1,15 @@
+#footer {
+    min-height: 5vh;
+    background-color: $color-best--3;
+    position: absolute;
+    bottom: -5vh;
+    width: 100%;
+    padding: 3rem 0;
+    p {
+        font-size: 1.7rem;
+        color: $color-dark--1;
+    }
+    #poweredBy {
+        display: none !important;
+    }
+}

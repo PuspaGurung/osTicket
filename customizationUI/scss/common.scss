@@ -8,6 +8,7 @@
 @import "./mixins/mediaQueries", "./mixins/borderRadious", "./mixins/boxShadow", "./mixins/rotate", "./mixins/transform";
 
 // UTILITIES
-@import "./utilities/button", "./utilities/input", "./utilities/popupModal";
+@import "./utilities/button", "./utilities/input", "./utilities/popupModal", "./utilities/container",
+    "./utilities/footer";
 // BASE
 @import "./base";
