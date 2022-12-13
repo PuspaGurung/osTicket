@@ -124,9 +124,13 @@ textarea,
     border-color: #51c53e !important; }
 
 input[type="text"],
-input[type="email"],
-input[type="tel"] {
+input[type="email"] {
   min-width: 50%; }
+
+input[type="tel"],
+input[size="5"] {
+  min-width: auto;
+  width: 25rem; }
 
 .redactor-styles-on {
   border: none !important; }
