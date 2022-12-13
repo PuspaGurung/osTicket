@@ -240,7 +240,7 @@ table {
 
 form p,
 form .buttons {
-  text-align: left; }
+  text-align: left !important; }
 
 html {
   /**
