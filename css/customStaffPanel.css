@@ -236,12 +236,7 @@ table {
       display: none; }
   .table td,
   table td {
-    border: 1px solid #e2e5e8 !important; }
-    .table td th,
-    table td th {
-      background-color: #eee !important;
-      color: #333 !important;
-      border: 1px solid #e2e5e8 !important; }
+    border: 1px solid #e2e5e8; }
   .table th,
   table th {
     background-color: #000 !important;
@@ -268,10 +263,18 @@ table {
   border: none; }
 
 table.ticket_info > tbody > tr > td {
-  padding: 2rem !important;
-  border: none !important;
-  background-color: rgba(247, 249, 250, 0.5);
+  border: none;
   background-color: #f8f8f8; }
+
+.tip_box table th,
+table td th {
+  background-color: #eee !important;
+  color: #333 !important;
+  border: 1px solid #e2e5e8 !important; }
+
+.tip_box table td {
+  padding: 1rem;
+  border: 1px solid #e2e5e8 !important; }
 
 form p,
 form .buttons {
@@ -345,6 +348,12 @@ table.ui-datepicker-calendar td {
   #ticketThread .thread-entry.response .header:after, #ticketThread .thread-entry.response .header:before, #ticketThread .thread-entry.response .header::before, #ticketThread .thread-entry.response .header::after {
     border-left-color: #ffe0b3 !important;
     border-right-color: #ffe0b3 !important; }
+
+.tip_box .tip_content {
+  border: 1px solid #e2e5e8; }
+
+.tip_box ul.tabs li a {
+  padding: 1rem 0; }
 
 html {
   /**
