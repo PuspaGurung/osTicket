@@ -257,3 +257,14 @@ ul.tabs {
         }
     }
 }
+
+// TICKET TITLE
+.tixTitle {
+    margin: 1rem 0;
+    background-color: $color-best--2;
+    padding: 1rem;
+    h3 {
+        font-weight: 500;
+        color: $color-dark--1;
+    }
+}

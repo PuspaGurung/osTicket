@@ -635,3 +635,11 @@ ul.tabs {
       ul.tabs li.active a {
         color: #ffffff;
         font-weight: normal; }
+
+.tixTitle {
+  margin: 1rem 0;
+  background-color: #f7f9fa;
+  padding: 1rem; }
+  .tixTitle h3 {
+    font-weight: 500;
+    color: #000; }
