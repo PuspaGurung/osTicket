@@ -29,6 +29,11 @@ input[size="5"] {
     min-width: auto;
     width: 25rem;
 }
+input[type="radio"],
+input[type="checkbox"] {
+    height: auto !important;
+    line-height: auto !important;
+}
 .redactor-styles-on {
     border: none !important;
 }
