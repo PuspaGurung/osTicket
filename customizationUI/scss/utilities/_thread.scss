@@ -1,0 +1,50 @@
+#ticketThread {
+    .header,
+    .thread-body {
+        @include borderRadious(0);
+    }
+    .thread-body {
+        p {
+            line-height: 2.2rem;
+        }
+    }
+    .thread-entry {
+        &.message {
+            .header {
+                background-color: $color-primary--1;
+                color: $color-best--1;
+            }
+            .header,
+            .thread-body {
+                border: 1px solid $color-primary--1;
+            }
+            .header {
+                &:after,
+                &:before,
+                &::before,
+                &::after {
+                    border-left-color: $color-primary--1 !important;
+                    border-right-color: $color-primary--1 !important;
+                }
+            }
+        }
+        &.response {
+            .header,
+            .thread-body {
+                border: 1px solid #ffe0b3;
+            }
+            .header {
+                background-color: #ffe0b3 !important;
+                &:after,
+                &:before,
+                &::before,
+                &::after {
+                    border-left-color: #ffe0b3 !important;
+                    border-right-color: #ffe0b3 !important;
+                }
+            }
+        }
+        &.note {
+        }
+    }
+}

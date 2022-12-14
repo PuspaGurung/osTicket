@@ -313,6 +313,39 @@ table.ui-datepicker-calendar td {
   padding: 1px !important;
   border: none !important; }
 
+#ticketThread .header,
+#ticketThread .thread-body {
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0; }
+
+#ticketThread .thread-body p {
+  line-height: 2.2rem; }
+
+#ticketThread .thread-entry.message .header {
+  background-color: #51c53e;
+  color: #ffffff; }
+
+#ticketThread .thread-entry.message .header,
+#ticketThread .thread-entry.message .thread-body {
+  border: 1px solid #51c53e; }
+
+#ticketThread .thread-entry.message .header:after, #ticketThread .thread-entry.message .header:before, #ticketThread .thread-entry.message .header::before, #ticketThread .thread-entry.message .header::after {
+  border-left-color: #51c53e !important;
+  border-right-color: #51c53e !important; }
+
+#ticketThread .thread-entry.response .header,
+#ticketThread .thread-entry.response .thread-body {
+  border: 1px solid #ffe0b3; }
+
+#ticketThread .thread-entry.response .header {
+  background-color: #ffe0b3 !important; }
+  #ticketThread .thread-entry.response .header:after, #ticketThread .thread-entry.response .header:before, #ticketThread .thread-entry.response .header::before, #ticketThread .thread-entry.response .header::after {
+    border-left-color: #ffe0b3 !important;
+    border-right-color: #ffe0b3 !important; }
+
 html {
   /**
       * size is measure in the basis of REMs, (pretty easier for responsive layout)
