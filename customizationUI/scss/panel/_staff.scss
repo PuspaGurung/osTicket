@@ -150,3 +150,19 @@ ul#sub_nav {
         }
     }
 }
+
+// CONTENT - CONTAINER
+#container {
+    position: relative;
+    padding-bottom: 5vh;
+}
+#content {
+    border-bottom: none !important;
+    border: none !important;
+}
+
+// FOOTER
+#footer {
+    position: absolute;
+    bottom: -5vh;
+}

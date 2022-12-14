@@ -475,3 +475,15 @@ ul#sub_nav {
           background-color: #51c53e !important; }
     ul#sub_nav li.item .customQ-dropdown .add-queue a:hover {
       background-color: #51c53e; }
+
+#container {
+  position: relative;
+  padding-bottom: 5vh; }
+
+#content {
+  border-bottom: none !important;
+  border: none !important; }
+
+#footer {
+  position: absolute;
+  bottom: -5vh; }
