@@ -635,3 +635,20 @@ form#clientLogin {
     align-items: center;
     justify-content: flex-end;
     flex: 1; }
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+.button,
+a.popup-dialog,
+.action-button {
+  height: 5rem !important;
+  line-height: 4.8rem !important; }
+
+input,
+select,
+.select2-selection,
+textarea,
+.redactor-styles {
+  height: 5rem !important; }
