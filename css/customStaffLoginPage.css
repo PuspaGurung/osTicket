@@ -280,6 +280,39 @@ form .buttons {
 form table {
   margin-bottom: 1rem; }
 
+#ui-datepicker-div {
+  border: 1px solid #e2e5e8;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  padding: 1rem;
+  z-index: 666666 !important; }
+  #ui-datepicker-div button {
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important;
+    color: #ffffff; }
+    #ui-datepicker-div button.ui-datepicker-current {
+      background-color: #666666; }
+    #ui-datepicker-div button.ui-datepicker-close {
+      background-color: #55c1ff; }
+
+table.ui-datepicker-calendar th {
+  padding: 0.7em 0.3em !important;
+  text-align: center !important;
+  font-weight: bold !important;
+  border: 0 !important;
+  background: transparent !important; }
+  table.ui-datepicker-calendar th span {
+    color: #333 !important; }
+
+table.ui-datepicker-calendar td {
+  border: 0;
+  padding: 1px !important;
+  border: none !important; }
+
 html {
   /**
       * size is measure in the basis of REMs, (pretty easier for responsive layout)

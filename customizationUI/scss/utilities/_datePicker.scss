@@ -1,0 +1,33 @@
+#ui-datepicker-div {
+    border: 1px solid $color-best--3;
+    @include borderRadious(0);
+    padding: 1rem;
+    z-index: 666666 !important;
+    button {
+        @include boxShadow(none !important);
+        color: $color-best--1;
+        &.ui-datepicker-current {
+            background-color: $color-support--2;
+        }
+        &.ui-datepicker-close {
+            background-color: $color-support--1;
+        }
+    }
+}
+table.ui-datepicker-calendar {
+    th {
+        padding: 0.7em 0.3em !important;
+        text-align: center !important;
+        font-weight: bold !important;
+        border: 0 !important;
+        background: transparent !important;
+        span {
+            color: $color-dark--2 !important;
+        }
+    }
+    td {
+        border: 0;
+        padding: 1px !important;
+        border: none !important;
+    }
+}
