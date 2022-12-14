@@ -589,6 +589,26 @@ ul#sub_nav {
     top: 100%;
     background-color: #51c53e;
     border: none !important; }
+  .sticky.bar .pull-right button,
+  .sticky.bar .pull-right input[type="button"],
+  .sticky.bar .pull-right input[type="reset"],
+  .sticky.bar .pull-right input[type="submit"],
+  .sticky.bar .pull-right .button,
+  .sticky.bar .pull-right a.popup-dialog,
+  .sticky.bar .pull-right .action-button {
+    height: 3rem !important;
+    line-height: 3rem !important;
+    margin-top: 5px; }
+    .sticky.bar .pull-right button i,
+    .sticky.bar .pull-right input[type="button"] i,
+    .sticky.bar .pull-right input[type="reset"] i,
+    .sticky.bar .pull-right input[type="submit"] i,
+    .sticky.bar .pull-right .button i,
+    .sticky.bar .pull-right a.popup-dialog i,
+    .sticky.bar .pull-right .action-button i {
+      margin-top: 3px !important;
+      border-left: none !important;
+      padding-top: 3px; }
 
 ul.tabs,
 ul.tabs li {
