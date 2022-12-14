@@ -13,7 +13,13 @@ table {
         }
     }
     td {
-        border: 1px solid #e2e5e8 !important;
+        border: 1px solid $color-best--3 !important;
+
+        th {
+            background-color: $color-best--4 !important;
+            color: $color-dark--2 !important;
+            border: 1px solid $color-best--3 !important;
+        }
     }
     th {
         background-color: $color-dark--1 !important;
@@ -37,5 +43,13 @@ table {
         background-color: $color-primary--2;
         color: $color-best--1;
         border: none;
+    }
+}
+table.ticket_info {
+    & > tbody > tr > td {
+        padding: 2rem !important;
+        border: none !important;
+        background-color: rgba($color-best--2, $alpha: 0.5);
+        background-color: #f8f8f8;
     }
 }

@@ -104,7 +104,7 @@ textarea,
   padding: 1rem 1rem !important;
   height: 4.5rem !important;
   outline: none;
-  border: 1px solid #f2f2f2 !important;
+  border: 1px solid #e2e5e8 !important;
   border-bottom-color: #51c53e !important;
   color: #333;
   -webkit-transition: all 0.5s;
@@ -209,7 +209,7 @@ input[type="checkbox"] {
 
 #footer {
   min-height: 5vh;
-  background-color: #f2f2f2;
+  background-color: #e2e5e8;
   position: absolute;
   width: 100%;
   padding: 3rem 0; }
@@ -237,6 +237,11 @@ table {
   .table td,
   table td {
     border: 1px solid #e2e5e8 !important; }
+    .table td th,
+    table td th {
+      background-color: #eee !important;
+      color: #333 !important;
+      border: 1px solid #e2e5e8 !important; }
   .table th,
   table th {
     background-color: #000 !important;
@@ -261,6 +266,12 @@ table {
   background-color: #36bc21;
   color: #ffffff;
   border: none; }
+
+table.ticket_info > tbody > tr > td {
+  padding: 2rem !important;
+  border: none !important;
+  background-color: rgba(247, 249, 250, 0.5);
+  background-color: #f8f8f8; }
 
 form p,
 form .buttons {
