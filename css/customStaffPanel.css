@@ -216,22 +216,36 @@ input[size="5"] {
 
 .table,
 table {
-  width: 100%; }
+  width: 100%;
+  border-collapse: collapse; }
   .table td,
   .table th,
   table td,
   table th {
     padding: 1rem !important;
-    vertical-align: middle !important;
-    border: 1px solid #e2e5e8 !important; }
+    vertical-align: middle !important; }
     .table td hr,
     .table th hr,
     table td hr,
     table th hr {
       display: none; }
+  .table td,
+  table td {
+    border: 1px solid #e2e5e8 !important; }
   .table th,
   table th {
-    padding: 1rem !important; }
+    background-color: #000 !important;
+    color: #ffffff !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important; }
+    .table th a,
+    .table th p,
+    .table th span,
+    .table th em,
+    table th a,
+    table th p,
+    table th span,
+    table th em {
+      color: #ffffff !important; }
 
 #ticketTable caption {
   background-color: #36bc21;
