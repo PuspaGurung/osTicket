@@ -81,7 +81,7 @@ ul#nav {
 }
 nav#customQ_nav {
     width: 100% !important;
-    height: auto !important;
+    height: 6rem !important;
 }
 ul#sub_nav {
     background-color: $color-primary--1;
@@ -159,10 +159,56 @@ ul#sub_nav {
 #content {
     border-bottom: none !important;
     border: none !important;
+    padding: 1rem 3rem 4rem;
 }
 
 // FOOTER
 #footer {
     position: absolute;
     bottom: -5vh;
+}
+
+// PAGE TOP SEARCH AREA
+
+#basic_search {
+    @include borderRadious(0 !important);
+    @include boxShadow(none !important);
+    border-bottom: none;
+    display: inline-block;
+    width: 100%;
+    padding: 1rem 2rem;
+    min-height: 7rem;
+    margin: 0 0 1rem 0 !important;
+    & > div {
+        height: auto !important;
+        min-height: none !important;
+    }
+    .input.attached.focus {
+        outline-offset: 0;
+        outline-style: none;
+        outline-width: 0;
+        outline-color: transparent;
+    }
+    input[type="text"],
+    input[type="search"] {
+        margin-right: -1px;
+    }
+    button.ui-datepicker-trigger {
+        margin-left: -1rem;
+        margin-right: 3rem;
+    }
+}
+
+// STICKY BAR
+.sticky.bar {
+    display: inline-block;
+    width: 100%;
+    h2 {
+        margin: 1rem 0 0 !important;
+    }
+    .scroll-up {
+        top: 100%;
+        background-color: $color-primary--1;
+        border: none !important;
+    }
 }

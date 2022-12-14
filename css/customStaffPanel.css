@@ -426,7 +426,7 @@ ul#nav {
 
 nav#customQ_nav {
   width: 100% !important;
-  height: auto !important; }
+  height: 6rem !important; }
 
 ul#sub_nav {
   background-color: #51c53e;
@@ -487,8 +487,49 @@ ul#sub_nav {
 
 #content {
   border-bottom: none !important;
-  border: none !important; }
+  border: none !important;
+  padding: 1rem 3rem 4rem; }
 
 #footer {
   position: absolute;
   bottom: -5vh; }
+
+#basic_search {
+  border-radius: 0 !important;
+  -webkit-border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+  -ms-border-radius: 0 !important;
+  -o-border-radius: 0 !important;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+  border-bottom: none;
+  display: inline-block;
+  width: 100%;
+  padding: 1rem 2rem;
+  min-height: 7rem;
+  margin: 0 0 1rem 0 !important; }
+  #basic_search > div {
+    height: auto !important;
+    min-height: none !important; }
+  #basic_search .input.attached.focus {
+    outline-offset: 0;
+    outline-style: none;
+    outline-width: 0;
+    outline-color: transparent; }
+  #basic_search input[type="text"],
+  #basic_search input[type="search"] {
+    margin-right: -1px; }
+  #basic_search button.ui-datepicker-trigger {
+    margin-left: -1rem;
+    margin-right: 3rem; }
+
+.sticky.bar {
+  display: inline-block;
+  width: 100%; }
+  .sticky.bar h2 {
+    margin: 1rem 0 0 !important; }
+  .sticky.bar .scroll-up {
+    top: 100%;
+    background-color: #51c53e;
+    border: none !important; }
