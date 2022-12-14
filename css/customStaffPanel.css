@@ -251,6 +251,11 @@ table {
     table th span,
     table th em {
       color: #ffffff !important; }
+    .table th a.desc,
+    .table th a.asc,
+    table th a.desc,
+    table th a.asc {
+      background-color: transparent !important; }
 
 #ticketTable caption {
   background-color: #36bc21;
@@ -260,6 +265,9 @@ table {
 form p,
 form .buttons {
   text-align: left !important; }
+
+form table {
+  margin-bottom: 1rem; }
 
 html {
   /**
@@ -348,6 +356,9 @@ a,
   .link:hover {
     color: #51c53e;
     border-bottom: none; }
+
+#warning_bar {
+  display: none; }
 
 #header {
   display: flex;
@@ -488,7 +499,8 @@ ul#sub_nav {
 #content {
   border-bottom: none !important;
   border: none !important;
-  padding: 1rem 3rem 4rem; }
+  padding: 1rem 3rem 3rem;
+  margin-bottom: 3rem; }
 
 #footer {
   position: absolute;
@@ -533,3 +545,29 @@ ul#sub_nav {
     top: 100%;
     background-color: #51c53e;
     border: none !important; }
+
+ul.tabs,
+ul.tabs li {
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+  height: auto !important;
+  border-radius: 0 !important;
+  -webkit-border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+  -ms-border-radius: 0 !important;
+  -o-border-radius: 0 !important; }
+
+ul.tabs {
+  padding: 0;
+  border-bottom: none !important; }
+  ul.tabs li {
+    border: none !important;
+    background-color: transparent; }
+    ul.tabs li a {
+      padding: 1.5rem 1rem; }
+    ul.tabs li.active {
+      background-color: #333 !important; }
+      ul.tabs li.active a {
+        color: #ffffff;
+        font-weight: normal; }

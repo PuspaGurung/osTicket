@@ -159,7 +159,8 @@ ul#sub_nav {
 #content {
     border-bottom: none !important;
     border: none !important;
-    padding: 1rem 3rem 4rem;
+    padding: 1rem 3rem 3rem;
+    margin-bottom: 3rem;
 }
 
 // FOOTER
@@ -169,7 +170,6 @@ ul#sub_nav {
 }
 
 // PAGE TOP SEARCH AREA
-
 #basic_search {
     @include borderRadious(0 !important);
     @include boxShadow(none !important);
@@ -210,5 +210,32 @@ ul#sub_nav {
         top: 100%;
         background-color: $color-primary--1;
         border: none !important;
+    }
+}
+
+// TABS NAVIGATION
+ul.tabs,
+ul.tabs li {
+    @include boxShadow(none !important);
+    height: auto !important;
+    @include borderRadious(0 !important);
+}
+
+ul.tabs {
+    padding: 0;
+    border-bottom: none !important;
+    li {
+        border: none !important;
+        background-color: transparent;
+        a {
+            padding: 1.5rem 1rem;
+        }
+        &.active {
+            background-color: $color-dark--2 !important;
+            a {
+                color: $color-best--1;
+                font-weight: normal;
+            }
+        }
     }
 }

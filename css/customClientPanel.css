@@ -251,6 +251,11 @@ table {
     table th span,
     table th em {
       color: #ffffff !important; }
+    .table th a.desc,
+    .table th a.asc,
+    table th a.desc,
+    table th a.asc {
+      background-color: transparent !important; }
 
 #ticketTable caption {
   background-color: #36bc21;
@@ -260,6 +265,9 @@ table {
 form p,
 form .buttons {
   text-align: left !important; }
+
+form table {
+  margin-bottom: 1rem; }
 
 html {
   /**
@@ -348,6 +356,9 @@ a,
   .link:hover {
     color: #51c53e;
     border-bottom: none; }
+
+#warning_bar {
+  display: none; }
 
 #header {
   padding: 0 10%;
