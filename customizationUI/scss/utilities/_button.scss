@@ -56,3 +56,23 @@ a.popup-dialog,
         border-left: none !important;
     }
 }
+
+// BUTTON INSIDE STIKCY-BAR
+.sticky.bar .pull-right {
+    button,
+    input[type="button"],
+    input[type="reset"],
+    input[type="submit"],
+    .button,
+    a.popup-dialog,
+    .action-button {
+        height: 3rem !important;
+        line-height: 3rem !important;
+        margin-top: 5px;
+        i {
+            margin-top: 3px !important;
+            border-left: none !important;
+            padding-top: 3px;
+        }
+    }
+}

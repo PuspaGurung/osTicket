@@ -13,12 +13,12 @@ table {
         }
     }
     td {
-        border: 1px solid $color-best--3;
+        border: 1px solid $color-best--3 !important;
     }
     th {
         background-color: $color-dark--1 !important;
         color: $color-best--1 !important;
-        border: 1px solid rgba($color-best--1, 0.1) !important;
+        border: 1px solid rgba($color-best--1, 0.2) !important;
         a,
         p,
         span,

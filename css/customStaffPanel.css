@@ -96,6 +96,27 @@ a.popup-dialog,
     margin-top: 8px !important;
     border-left: none !important; }
 
+.sticky.bar .pull-right button,
+.sticky.bar .pull-right input[type="button"],
+.sticky.bar .pull-right input[type="reset"],
+.sticky.bar .pull-right input[type="submit"],
+.sticky.bar .pull-right .button,
+.sticky.bar .pull-right a.popup-dialog,
+.sticky.bar .pull-right .action-button {
+  height: 3rem !important;
+  line-height: 3rem !important;
+  margin-top: 5px; }
+  .sticky.bar .pull-right button i,
+  .sticky.bar .pull-right input[type="button"] i,
+  .sticky.bar .pull-right input[type="reset"] i,
+  .sticky.bar .pull-right input[type="submit"] i,
+  .sticky.bar .pull-right .button i,
+  .sticky.bar .pull-right a.popup-dialog i,
+  .sticky.bar .pull-right .action-button i {
+    margin-top: 3px !important;
+    border-left: none !important;
+    padding-top: 3px; }
+
 input,
 select,
 .select2-selection,
@@ -236,12 +257,12 @@ table {
       display: none; }
   .table td,
   table td {
-    border: 1px solid #e2e5e8; }
+    border: 1px solid #e2e5e8 !important; }
   .table th,
   table th {
     background-color: #000 !important;
     color: #ffffff !important;
-    border: 1px solid rgba(255, 255, 255, 0.1) !important; }
+    border: 1px solid rgba(255, 255, 255, 0.2) !important; }
     .table th a,
     .table th p,
     .table th span,
@@ -631,26 +652,6 @@ ul#sub_nav {
     top: 100%;
     background-color: #51c53e;
     border: none !important; }
-  .sticky.bar .pull-right button,
-  .sticky.bar .pull-right input[type="button"],
-  .sticky.bar .pull-right input[type="reset"],
-  .sticky.bar .pull-right input[type="submit"],
-  .sticky.bar .pull-right .button,
-  .sticky.bar .pull-right a.popup-dialog,
-  .sticky.bar .pull-right .action-button {
-    height: 3rem !important;
-    line-height: 3rem !important;
-    margin-top: 5px; }
-    .sticky.bar .pull-right button i,
-    .sticky.bar .pull-right input[type="button"] i,
-    .sticky.bar .pull-right input[type="reset"] i,
-    .sticky.bar .pull-right input[type="submit"] i,
-    .sticky.bar .pull-right .button i,
-    .sticky.bar .pull-right a.popup-dialog i,
-    .sticky.bar .pull-right .action-button i {
-      margin-top: 3px !important;
-      border-left: none !important;
-      padding-top: 3px; }
 
 ul.tabs,
 ul.tabs li {
