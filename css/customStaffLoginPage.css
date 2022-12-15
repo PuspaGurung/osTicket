@@ -385,6 +385,10 @@ table.ui-datepicker-calendar td {
 .tip_box ul.tabs li a {
   padding: 1rem 0; }
 
+.warning-banner {
+  height: auto;
+  padding: 1rem 1rem 1rem 4rem; }
+
 html {
   /**
       * size is measure in the basis of REMs, (pretty easier for responsive layout)
