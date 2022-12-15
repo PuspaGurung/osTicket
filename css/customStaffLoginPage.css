@@ -108,6 +108,13 @@ a.popup-dialog,
 button.red {
   background-color: #df554a !important; }
 
+button.green,
+.button.green {
+  background-color: #51c53e; }
+  button.green:hover,
+  .button.green:hover {
+    background-color: #36bc21 !important; }
+
 input,
 select,
 .select2-selection,

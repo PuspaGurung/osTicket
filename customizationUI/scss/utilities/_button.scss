@@ -81,3 +81,10 @@ a.popup-dialog,
 button.red {
     background-color: $color-danger--1 !important;
 }
+button.green,
+.button.green{
+    background-color: $color-primary--1;
+    &:hover{
+        background-color: $color-primary--2 !important;
+    }
+}
