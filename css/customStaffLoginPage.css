@@ -40,6 +40,7 @@ a.popup-dialog,
   box-sizing: border-box;
   box-shadow: none !important;
   border: none !important;
+  color: #ffffff !important;
   border-radius: 0 !important;
   -webkit-border-radius: 0 !important;
   -moz-border-radius: 0 !important;
@@ -56,11 +57,12 @@ a.popup-dialog,
     -moz-box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08), 0 20px 20px rgba(0, 0, 0, 0.08) !important;
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08), 0 4px 20px rgba(0, 0, 0, 0.08) !important; }
 
-button[type="submit"],
-input[type="submit"],
 .button {
-  background-color: #51c53e !important;
-  color: #ffffff !important; }
+  background-color: #51c53e; }
+
+button[type="submit"],
+input[type="submit"] {
+  background-color: #51c53e !important; }
 
 button.red,
 input[name="cancel"],
@@ -78,15 +80,15 @@ button[name="reset"],
 input[type="reset"],
 a.popup-dialog,
 .action-button {
-  background-color: #666666;
   background: #666666;
+  background-color: #666666;
   color: #ffffff !important; }
   button[type="reset"]:hover,
   button[name="reset"]:hover,
   input[type="reset"]:hover,
   a.popup-dialog:hover,
   .action-button:hover {
-    background-color: #666666;
+    background-color: #666666 !important;
     color: #ffffff !important; }
   button[type="reset"] i,
   button[name="reset"] i,
@@ -504,60 +506,3 @@ a,
 
 #warning_bar {
   display: none; }
-
-#loginBody {
-  background-color: #f7f9fa; }
-  #loginBody #brickwall,
-  #loginBody #blur {
-    display: none; }
-  #loginBody #loginBox {
-    -webkit-box-shadow: none !important;
-    -moz-box-shadow: none !important;
-    box-shadow: none !important;
-    background-color: #ffffff;
-    width: 30% !important;
-    left: 50% !important;
-    top: 50% !important;
-    margin: 0 !important;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    padding: 4rem; }
-    @media (max-width: 65em) {
-      #loginBody #loginBox {
-        width: 95% !important; } }
-    #loginBody #loginBox::after {
-      content: none; }
-    #loginBody #loginBox form {
-      width: 100%; }
-      #loginBody #loginBox form fieldset {
-        margin: 0; }
-      #loginBody #loginBox form input,
-      #loginBody #loginBox form button {
-        width: 100%; }
-    #loginBody #loginBox #logo a {
-      display: block;
-      height: auto; }
-    #loginBody #loginBox #login-message {
-      font-size: 1.6rem;
-      color: #333; }
-    #loginBody #loginBox h3 {
-      margin-bottom: 1rem;
-      display: block !important; }
-  #loginBody #company .content {
-    background-color: transparent;
-    border-radius: 0;
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
-    -ms-border-radius: 0;
-    -o-border-radius: 0;
-    color: #333;
-    text-shadow: none;
-    -webkit-box-shadow: none !important;
-    -moz-box-shadow: none !important;
-    box-shadow: none !important; }
-
-#poweredBy {
-  display: none !important; }

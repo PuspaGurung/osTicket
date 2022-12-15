@@ -16,6 +16,7 @@ a.popup-dialog,
     box-sizing: border-box;
     box-shadow: none !important;
     border: none !important;
+    color: $color-best--1 !important;
     @include borderRadious(0 !important);
 
     &:hover {
@@ -23,11 +24,12 @@ a.popup-dialog,
     }
 }
 
-button[type="submit"],
-input[type="submit"],
 .button {
+    background-color: $color-primary--1;
+}
+button[type="submit"],
+input[type="submit"] {
     background-color: $color-primary--1 !important;
-    color: $color-best--1 !important;
 }
 button.red,
 input[name="cancel"],
@@ -44,11 +46,11 @@ button[name="reset"],
 input[type="reset"],
 a.popup-dialog,
 .action-button {
-    background-color: $color-support--2;
     background: $color-support--2;
+    background-color: $color-support--2;
     color: $color-best--1 !important;
     &:hover {
-        background-color: $color-support--2;
+        background-color: $color-support--2 !important;
         color: $color-best--1 !important;
     }
     i {
