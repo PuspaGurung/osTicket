@@ -347,7 +347,9 @@ table.ui-datepicker-calendar td {
   -o-border-radius: 0; }
 
 #ticketThread .thread-body p {
-  line-height: 2.2rem; }
+  line-height: 2.2rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.7rem; }
 
 #ticketThread .thread-entry.message .header {
   background-color: #51c53e;
@@ -370,6 +372,12 @@ table.ui-datepicker-calendar td {
   #ticketThread .thread-entry.response .header:after, #ticketThread .thread-entry.response .header:before, #ticketThread .thread-entry.response .header::before, #ticketThread .thread-entry.response .header::after {
     border-left-color: #ffe0b3 !important;
     border-right-color: #ffe0b3 !important; }
+
+#ticketThread blockquote p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.7rem;
+  line-height: 2.2rem;
+  color: #000; }
 
 .tip_box .tip_content {
   border: 1px solid #e2e5e8; }
