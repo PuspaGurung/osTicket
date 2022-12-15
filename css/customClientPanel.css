@@ -246,6 +246,9 @@ ul.select2-selection__rendered input {
     padding-bottom: 1.5rem;
     padding-right: 0; }
 
+.select2-container .select2-dropdown {
+  z-index: 566666666; }
+
 #container {
   position: relative;
   width: 100%;
@@ -545,6 +548,9 @@ a,
   .link:hover {
     color: #51c53e;
     border-bottom: none; }
+
+a.field-config {
+  margin-left: 2rem; }
 
 #warning_bar {
   display: none; }
