@@ -177,6 +177,11 @@ select,
     .select2-selection {
       min-width: none; } }
 
+ul.select2-selection__rendered input {
+  border: none !important;
+  margin-top: 0 !important;
+  padding: 0 !important; }
+
 #overlay {
   background-color: rgba(0, 0, 0, 0.7);
   opacity: 1; }
@@ -357,41 +362,59 @@ table.ui-datepicker-calendar td {
   border: none !important; }
 
 #ticketThread .header,
-#ticketThread .thread-body {
+#ticketThread .thread-body,
+#task_thread_container .header,
+#task_thread_container .thread-body {
   border-radius: 0;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   -ms-border-radius: 0;
   -o-border-radius: 0; }
 
-#ticketThread .thread-body p {
+#ticketThread .thread-body p,
+#task_thread_container .thread-body p {
   line-height: 2.2rem;
   font-family: "Montserrat", sans-serif;
   font-size: 1.7rem; }
 
-#ticketThread .thread-entry.message .header {
+#ticketThread .thread-entry.message .header,
+#task_thread_container .thread-entry.message .header {
   background-color: #51c53e;
   color: #ffffff; }
 
 #ticketThread .thread-entry.message .header,
-#ticketThread .thread-entry.message .thread-body {
+#ticketThread .thread-entry.message .thread-body,
+#task_thread_container .thread-entry.message .header,
+#task_thread_container .thread-entry.message .thread-body {
   border: 1px solid #51c53e; }
 
-#ticketThread .thread-entry.message .header:after, #ticketThread .thread-entry.message .header:before, #ticketThread .thread-entry.message .header::before, #ticketThread .thread-entry.message .header::after {
+#ticketThread .thread-entry.message .header:after, #ticketThread .thread-entry.message .header:before, #ticketThread .thread-entry.message .header::before, #ticketThread .thread-entry.message .header::after,
+#task_thread_container .thread-entry.message .header:after,
+#task_thread_container .thread-entry.message .header:before,
+#task_thread_container .thread-entry.message .header::before,
+#task_thread_container .thread-entry.message .header::after {
   border-left-color: #51c53e !important;
   border-right-color: #51c53e !important; }
 
 #ticketThread .thread-entry.response .header,
-#ticketThread .thread-entry.response .thread-body {
+#ticketThread .thread-entry.response .thread-body,
+#task_thread_container .thread-entry.response .header,
+#task_thread_container .thread-entry.response .thread-body {
   border: 1px solid #ffe0b3; }
 
-#ticketThread .thread-entry.response .header {
+#ticketThread .thread-entry.response .header,
+#task_thread_container .thread-entry.response .header {
   background-color: #ffe0b3 !important; }
-  #ticketThread .thread-entry.response .header:after, #ticketThread .thread-entry.response .header:before, #ticketThread .thread-entry.response .header::before, #ticketThread .thread-entry.response .header::after {
+  #ticketThread .thread-entry.response .header:after, #ticketThread .thread-entry.response .header:before, #ticketThread .thread-entry.response .header::before, #ticketThread .thread-entry.response .header::after,
+  #task_thread_container .thread-entry.response .header:after,
+  #task_thread_container .thread-entry.response .header:before,
+  #task_thread_container .thread-entry.response .header::before,
+  #task_thread_container .thread-entry.response .header::after {
     border-left-color: #ffe0b3 !important;
     border-right-color: #ffe0b3 !important; }
 
-#ticketThread blockquote p {
+#ticketThread blockquote p,
+#task_thread_container blockquote p {
   font-family: "Montserrat", sans-serif;
   font-size: 1.7rem;
   line-height: 2.2rem;

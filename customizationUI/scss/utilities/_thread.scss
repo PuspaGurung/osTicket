@@ -1,4 +1,5 @@
-#ticketThread {
+#ticketThread,
+#task_thread_container {
     .header,
     .thread-body {
         @include borderRadious(0);
