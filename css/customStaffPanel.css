@@ -148,6 +148,10 @@ textarea,
 input[type="text"],
 input[type="email"] {
   min-width: 50%; }
+  @media (max-width: 37.5em) {
+    input[type="text"],
+    input[type="email"] {
+      min-width: none; } }
 
 input[type="tel"],
 input[size="5"] {
@@ -157,10 +161,19 @@ input[size="5"] {
 input[type="radio"],
 input[type="checkbox"] {
   height: auto !important;
-  line-height: auto !important; }
+  line-height: auto !important;
+  min-width: auto; }
 
 .redactor-styles-on {
   border: none !important; }
+
+select,
+.select2-selection {
+  min-width: 20%; }
+  @media (max-width: 37.5em) {
+    select,
+    .select2-selection {
+      min-width: none; } }
 
 #overlay {
   background-color: rgba(0, 0, 0, 0.7);
@@ -301,6 +314,9 @@ table td th {
 form p,
 form .buttons {
   text-align: left !important; }
+
+form p {
+  margin-top: 1.5rem; }
 
 form table {
   margin-bottom: 1rem; }

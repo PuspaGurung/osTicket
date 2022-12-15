@@ -16,6 +16,7 @@ textarea,
 
     box-shadow: none !important;
     @include borderRadious(0 !important);
+
     &:focus {
         border-color: $color-primary--1 !important;
     }
@@ -23,6 +24,9 @@ textarea,
 input[type="text"],
 input[type="email"] {
     min-width: 50%;
+    @include respond-mediaQuery(phone) {
+        min-width: none;
+    }
 }
 input[type="tel"],
 input[size="5"] {
@@ -33,7 +37,15 @@ input[type="radio"],
 input[type="checkbox"] {
     height: auto !important;
     line-height: auto !important;
+    min-width: auto;
 }
 .redactor-styles-on {
     border: none !important;
+}
+select,
+.select2-selection {
+    min-width: 20%;
+    @include respond-mediaQuery(phone) {
+        min-width: none;
+    }
 }
