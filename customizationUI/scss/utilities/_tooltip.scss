@@ -3,6 +3,7 @@
         border: 1px solid $color-best--3;
     }
     table {
+        margin-bottom: 1rem;
         th,
         td {
         }
@@ -12,6 +13,12 @@
         }
     }
     ul.tabs li a {
-        padding: 1rem 0;
+        padding: 1rem;
+    }
+    hr {
+        display: none;
+    }
+    .tip_menu {
+        border-top: none;
     }
 }

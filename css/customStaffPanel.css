@@ -382,8 +382,17 @@ table.ui-datepicker-calendar td {
 .tip_box .tip_content {
   border: 1px solid #e2e5e8; }
 
+.tip_box table {
+  margin-bottom: 1rem; }
+
 .tip_box ul.tabs li a {
-  padding: 1rem 0; }
+  padding: 1rem; }
+
+.tip_box hr {
+  display: none; }
+
+.tip_box .tip_menu {
+  border-top: none; }
 
 .warning-banner {
   height: auto;
