@@ -321,6 +321,9 @@ table td th {
   padding: 1rem;
   border: 1px solid #e2e5e8 !important; }
 
+table.list {
+  background-color: #eee; }
+
 form p,
 form .buttons {
   text-align: left !important; }
