@@ -1,17 +1,3 @@
-@font-face {
-  font-family: "Montserrat";
-  src: url("../../fonts/Montserrat-Bold.woff2") format("woff2"), url("../../fonts/Montserrat-Bold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap; }
-
-@font-face {
-  font-family: "Montserrat";
-  src: url("../../fonts/Montserrat-Regular.woff2") format("woff2"), url("../../fonts/Montserrat-Regular.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap; }
-
 /*----------------------------
 *** MEDIA-QUERY 
 ** Break points-
@@ -495,7 +481,7 @@ html {
 body {
   position: relative;
   font-weight: normal;
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   line-height: 2.5rem;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
