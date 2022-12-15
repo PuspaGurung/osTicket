@@ -119,6 +119,9 @@ a.popup-dialog,
     border-left: none !important;
     padding-top: 3px; }
 
+button.red {
+  background-color: #df554a !important; }
+
 input,
 select,
 .select2-selection,
