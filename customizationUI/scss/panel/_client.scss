@@ -207,7 +207,7 @@ ul#nav {
             width: 70%;
             .search-form {
                 padding: 2rem;
-                background-color: $color-best--3;
+                background-color: rgba($color-best--3, $alpha: 0.6);
                 form {
                     display: flex;
                     align-items: center;
@@ -279,15 +279,17 @@ ul#kb {
 
 // OPEN A NEW TICKET
 #ticketForm {
-    background-color: $color-best--3;
+    background-color: rgba($color-best--3, $alpha: 0.4);
     padding: 3rem;
     margin-top: 1rem;
     margin-bottom: 4rem;
 }
-
+#ticketInfo h1 {
+    border-bottom: none;
+}
 // CHECK TICKET STATUS
 form#clientLogin {
-    background-color: $color-best--3;
+    background-color: rgba($color-best--3, $alpha: 0.4);
     padding: 3rem;
     border: none;
     @include borderRadious(0);

@@ -262,7 +262,8 @@ table {
   table th {
     background-color: #000 !important;
     color: #ffffff !important;
-    border: 1px solid rgba(255, 255, 255, 0.2) !important; }
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    font-size: 1.7rem !important; }
     .table th a,
     .table th p,
     .table th span,

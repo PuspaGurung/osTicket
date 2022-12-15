@@ -262,7 +262,8 @@ table {
   table th {
     background-color: #000 !important;
     color: #ffffff !important;
-    border: 1px solid rgba(255, 255, 255, 0.2) !important; }
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    font-size: 1.7rem !important; }
     .table th a,
     .table th p,
     .table th span,
@@ -651,7 +652,7 @@ ul#nav {
       width: 70%; }
       #content #landing_page .main-content .search-form {
         padding: 2rem;
-        background-color: #e2e5e8; }
+        background-color: rgba(226, 229, 232, 0.6); }
         #content #landing_page .main-content .search-form form {
           display: flex;
           align-items: center;
@@ -699,13 +700,16 @@ ul#kb {
     line-height: 2rem; }
 
 #ticketForm {
-  background-color: #e2e5e8;
+  background-color: rgba(226, 229, 232, 0.4);
   padding: 3rem;
   margin-top: 1rem;
   margin-bottom: 4rem; }
 
+#ticketInfo h1 {
+  border-bottom: none; }
+
 form#clientLogin {
-  background-color: #e2e5e8;
+  background-color: rgba(226, 229, 232, 0.4);
   padding: 3rem;
   border: none;
   border-radius: 0;
