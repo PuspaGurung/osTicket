@@ -169,6 +169,9 @@ input[type="checkbox"] {
 .redactor-styles-on {
   border: none !important; }
 
+.redactor-styles {
+  height: auto !important; }
+
 select,
 .select2-selection {
   min-width: 20%; }
@@ -327,6 +330,11 @@ form p {
 
 form table {
   margin-bottom: 1rem; }
+
+form#task_note .redactor-styles,
+form#task_reply .redactor-styles,
+form#reply .redactor-styles {
+  max-width: 100% !important; }
 
 #ui-datepicker-div {
   border: 1px solid #e2e5e8;

@@ -10,3 +10,11 @@ form {
         margin-bottom: 1rem;
     }
 }
+
+form#task_note,
+form#task_reply,
+form#reply {
+    .redactor-styles {
+        max-width: 100% !important;
+    }
+}
