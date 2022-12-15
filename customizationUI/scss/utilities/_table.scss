@@ -11,6 +11,9 @@ table {
         hr {
             display: none;
         }
+        img {
+            box-shadow: none !important;
+        }
     }
     td {
         border: 1px solid $color-best--3 !important;
@@ -51,6 +54,9 @@ table td th {
     background-color: $color-best--4 !important;
     color: $color-dark--2 !important;
     border: 1px solid $color-best--3 !important;
+    em {
+        color: $color-dark--2 !important;
+    }
 }
 .tip_box table td {
     padding: 1rem;
