@@ -471,6 +471,9 @@ table.ui-datepicker-calendar td {
   height: auto;
   padding: 1rem 1rem 1rem 4rem; }
 
+.file {
+  height: auto !important; }
+
 html {
   /**
       * size is measure in the basis of REMs, (pretty easier for responsive layout)
