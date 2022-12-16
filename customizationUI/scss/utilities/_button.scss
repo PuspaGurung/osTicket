@@ -24,12 +24,17 @@ a.popup-dialog,
     }
 }
 
-.button {
-    background-color: $color-primary--1;
-}
+.button,
 button[type="submit"],
 input[type="submit"] {
     background-color: $color-primary--1 !important;
+}
+.button,
+button[type="submit"],
+input[type="submit"] {
+    &:hover {
+        background-color: $color-primary--2 !important;
+    }
 }
 button.red,
 input[name="cancel"],
@@ -82,9 +87,9 @@ button.red {
     background-color: $color-danger--1 !important;
 }
 button.green,
-.button.green{
+.button.green {
     background-color: $color-primary--1;
-    &:hover{
+    &:hover {
         background-color: $color-primary--2 !important;
     }
 }

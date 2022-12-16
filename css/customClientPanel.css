@@ -43,12 +43,15 @@ a.popup-dialog,
     -moz-box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08), 0 20px 20px rgba(0, 0, 0, 0.08) !important;
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08), 0 4px 20px rgba(0, 0, 0, 0.08) !important; }
 
-.button {
-  background-color: #51c53e; }
-
+.button,
 button[type="submit"],
 input[type="submit"] {
   background-color: #51c53e !important; }
+
+.button:hover,
+button[type="submit"]:hover,
+input[type="submit"]:hover {
+  background-color: #36bc21 !important; }
 
 button.red,
 input[name="cancel"],
