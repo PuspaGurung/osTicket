@@ -181,6 +181,10 @@ ul.select2-selection__rendered input {
   margin-top: 0 !important;
   padding: 0 !important; }
 
+.dialog input[size="5"] {
+  min-width: auto;
+  width: 15rem; }
+
 #overlay {
   background-color: rgba(0, 0, 0, 0.7);
   opacity: 1; }
@@ -238,6 +242,16 @@ ul.select2-selection__rendered input {
   .dialog h3 {
     padding-bottom: 1.5rem;
     padding-right: 0; }
+  .dialog hr {
+    margin-bottom: 1rem; }
+  .dialog .span12 {
+    padding-left: 0;
+    padding-right: 0; }
+  .dialog .avatar {
+    margin: 0 1rem 1rem 0 !important; }
+  .dialog caption {
+    padding: 0;
+    margin-bottom: 1rem; }
 
 .select2-container .select2-dropdown {
   z-index: 566666666; }

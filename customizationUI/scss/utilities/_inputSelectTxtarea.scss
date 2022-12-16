@@ -60,3 +60,10 @@ ul.select2-selection__rendered {
         padding: 0 !important;
     }
 }
+
+.dialog {
+    input[size="5"] {
+        min-width: auto;
+        width: 15rem;
+    }
+}
