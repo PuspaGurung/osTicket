@@ -24,7 +24,7 @@ require_once (INCLUDE_DIR.'class.api.php');
  * call controller should inherit from this class in order to maintain
  * consistency.
  */
-class AjaxController extends ApiController {
+class AjaxController extends Controller {
 
     function staffOnly() {
         global $thisstaff;
@@ -32,7 +32,6 @@ class AjaxController extends ApiController {
             Http::response(401,sprintf(__('Access Denied. IP %s'),$_SERVER['REMOTE_ADDR']));
         }
     }
-
     /**
      * Convert a PHP array into a JSON-encoded string
      */
@@ -45,6 +44,6 @@ class AjaxController extends ApiController {
     }
 
     function get($var, $default=null) {
-        return $_GET[$var] ?: $default;
+        return (isset($_GET[$var])) ? $_GET[$var] : $default;
     }
 }
