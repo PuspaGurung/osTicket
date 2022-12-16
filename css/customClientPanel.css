@@ -403,11 +403,15 @@ table.ui-datepicker-calendar td {
   -ms-border-radius: 0;
   -o-border-radius: 0; }
 
-#ticketThread .thread-body p,
-#task_thread_container .thread-body p {
-  line-height: 2.2rem;
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.7rem; }
+#ticketThread .thread-body,
+#task_thread_container .thread-body {
+  border-bottom-width: 3px !important;
+  border-bottom-color: #aaa !important; }
+  #ticketThread .thread-body p,
+  #task_thread_container .thread-body p {
+    line-height: 2.2rem;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.7rem; }
 
 #ticketThread .thread-entry.message .header,
 #task_thread_container .thread-entry.message .header {
@@ -473,6 +477,13 @@ table.ui-datepicker-calendar td {
 
 .file {
   height: auto !important; }
+
+.message.bar {
+  padding-left: 5rem !important; }
+  .message.bar .avatar {
+    display: none; }
+  .message.bar body {
+    margin-left: 0 !important; }
 
 html {
   /**

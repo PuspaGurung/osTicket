@@ -5,6 +5,8 @@
         @include borderRadious(0);
     }
     .thread-body {
+        border-bottom-width: 3px !important;
+        border-bottom-color: #aaa !important;
         p {
             line-height: 2.2rem;
             font-family: "Montserrat", sans-serif;
