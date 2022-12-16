@@ -89,10 +89,10 @@ ul#sub_nav {
     padding: 0 2rem;
     line-height: initial;
     height: 6rem !important;
-    & > li { 
-       a{
-        background-position-x: 1rem !important;
-       }
+    & > li {
+        a {
+            background-position-x: 1rem !important;
+        }
     }
     li {
         border: none !important;
@@ -155,7 +155,7 @@ ul#sub_nav {
                 & > li:has(h4) {
                     &:hover {
                         background-color: transparent !important;
-                        cursor:default;
+                        cursor: default;
                     }
                 }
                 h4 {
@@ -272,5 +272,64 @@ ul.tabs {
     h3 {
         font-weight: 500;
         color: $color-dark--1;
+    }
+}
+
+// KNOWLEDGE BASE (FAQ)
+.faq-category {
+    ol {
+        li {
+            a {
+                color: $color-dark--2;
+                height: auto;
+                font-size: 1.7rem !important;
+                font-weight: 500;
+            }
+        }
+    }
+}
+.faq-category,
+.faq-content,
+#kb {
+    background-color: rgba($color-best--3, $alpha: 0.3);
+    padding: 2rem;
+    margin: 1rem 0 0 !important;
+    h4 span,
+    li a span {
+        color: $color-primary--1 !important;
+    }
+}
+.faq-content {
+    margin-bottom: 1rem !important;
+    br {
+        display: none;
+    }
+    width: 100%;
+    .faq-title {
+    }
+    .faded {
+        margin-bottom: 1rem;
+        font-style: italic;
+    }
+    .thread-body {
+        margin-bottom: 1rem;
+    }
+    p {
+        font-size: 1.7rem;
+        line-height: 2.2rem;
+    }
+    .thread-body {
+        background-color: transparent;
+    }
+}
+.sidebar.faq-meta {
+    margin: 1rem 1rem 0 0 !important;
+}
+ul#kb {
+    h4 a {
+        font-size: 1.7rem;
+    }
+    li {
+        background-position-y: 1rem;
     }
 }

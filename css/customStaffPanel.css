@@ -819,3 +819,48 @@ ul.tabs {
   .tixTitle h3 {
     font-weight: 500;
     color: #000; }
+
+.faq-category ol li a {
+  color: #333;
+  height: auto;
+  font-size: 1.7rem !important;
+  font-weight: 500; }
+
+.faq-category,
+.faq-content,
+#kb {
+  background-color: rgba(226, 229, 232, 0.3);
+  padding: 2rem;
+  margin: 1rem 0 0 !important; }
+  .faq-category h4 span,
+  .faq-category li a span,
+  .faq-content h4 span,
+  .faq-content li a span,
+  #kb h4 span,
+  #kb li a span {
+    color: #51c53e !important; }
+
+.faq-content {
+  margin-bottom: 1rem !important;
+  width: 100%; }
+  .faq-content br {
+    display: none; }
+  .faq-content .faded {
+    margin-bottom: 1rem;
+    font-style: italic; }
+  .faq-content .thread-body {
+    margin-bottom: 1rem; }
+  .faq-content p {
+    font-size: 1.7rem;
+    line-height: 2.2rem; }
+  .faq-content .thread-body {
+    background-color: transparent; }
+
+.sidebar.faq-meta {
+  margin: 1rem 1rem 0 0 !important; }
+
+ul#kb h4 a {
+  font-size: 1.7rem; }
+
+ul#kb li {
+  background-position-y: 1rem; }
