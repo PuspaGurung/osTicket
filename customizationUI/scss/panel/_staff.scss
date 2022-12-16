@@ -89,6 +89,11 @@ ul#sub_nav {
     padding: 0 2rem;
     line-height: initial;
     height: 6rem !important;
+    & > li { 
+       a{
+        background-position-x: 1rem !important;
+       }
+    }
     li {
         border: none !important;
         height: auto !important;
@@ -97,7 +102,7 @@ ul#sub_nav {
         @include borderRadious(0 !important);
         a {
             color: $color-best--1 !important;
-            padding: 2rem 3rem !important;
+            padding: 2rem 3rem 2rem 3.5rem !important;
             &.active {
                 background-color: $color-primary--2;
             }
@@ -138,10 +143,29 @@ ul#sub_nav {
                         color: $color-secondary--1;
                     }
                     &:hover {
-                        background-color: $color-primary--1 !important;
+                        background-color: $color-primary--2 !important;
+                    }
+                    a:hover {
+                        background-color: $color-primary--2 !important;
                     }
                 }
+                & > li:has(a.active) {
+                    background-color: $color-primary--2;
+                }
+                & > li:has(h4) {
+                    &:hover {
+                        background-color: transparent !important;
+                        cursor:default;
+                    }
+                }
+                h4 {
+                    width: 100%;
+                    background-color: transparent;
+                    color: $color-best--1 !important;
+                    text-align: right;
+                }
             }
+
             .add-queue {
                 a:hover {
                     background-color: $color-primary--1;

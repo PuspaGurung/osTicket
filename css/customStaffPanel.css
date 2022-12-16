@@ -636,6 +636,8 @@ ul#sub_nav {
   padding: 0 2rem;
   line-height: initial;
   height: 6rem !important; }
+  ul#sub_nav > li a {
+    background-position-x: 1rem !important; }
   ul#sub_nav li {
     border: none !important;
     height: auto !important;
@@ -650,7 +652,7 @@ ul#sub_nav {
     -o-border-radius: 0 !important; }
     ul#sub_nav li a {
       color: #ffffff !important;
-      padding: 2rem 3rem !important; }
+      padding: 2rem 3rem 2rem 3.5rem !important; }
       ul#sub_nav li a.active {
         background-color: #36bc21; }
     ul#sub_nav li.item a i {
@@ -679,7 +681,19 @@ ul#sub_nav {
         ul#sub_nav li.item .customQ-dropdown ul li span {
           color: #ffe400; }
         ul#sub_nav li.item .customQ-dropdown ul li:hover {
-          background-color: #51c53e !important; }
+          background-color: #36bc21 !important; }
+        ul#sub_nav li.item .customQ-dropdown ul li a:hover {
+          background-color: #36bc21 !important; }
+      ul#sub_nav li.item .customQ-dropdown ul > li:has(a.active) {
+        background-color: #36bc21; }
+      ul#sub_nav li.item .customQ-dropdown ul > li:has(h4):hover {
+        background-color: transparent !important;
+        cursor: default; }
+      ul#sub_nav li.item .customQ-dropdown ul h4 {
+        width: 100%;
+        background-color: transparent;
+        color: #ffffff !important;
+        text-align: right; }
     ul#sub_nav li.item .customQ-dropdown .add-queue a:hover {
       background-color: #51c53e; }
 
