@@ -67,6 +67,7 @@ input.close {
 button[type="reset"],
 button[name="reset"],
 input[type="reset"],
+input[type="reset"],
 a.popup-dialog,
 .action-button {
   background: #666666;
@@ -75,12 +76,14 @@ a.popup-dialog,
   button[type="reset"]:hover,
   button[name="reset"]:hover,
   input[type="reset"]:hover,
+  input[type="reset"]:hover,
   a.popup-dialog:hover,
   .action-button:hover {
     background-color: #666666 !important;
     color: #ffffff !important; }
   button[type="reset"] i,
   button[name="reset"] i,
+  input[type="reset"] i,
   input[type="reset"] i,
   a.popup-dialog i,
   .action-button i {
@@ -182,6 +185,9 @@ select,
     select,
     .select2-selection {
       min-width: none; } }
+
+.select2-selection[role="combobox"] {
+  padding: 0 !important; }
 
 ul.select2-selection__rendered input {
   border: none !important;
@@ -867,3 +873,10 @@ ul#kb h4 a {
 
 ul#kb li {
   background-position-y: 1rem; }
+
+ul#trans,
+#content-trans {
+  background-color: #eee; }
+  ul#trans li.active,
+  #content-trans li.active {
+    background-color: #333 !important; }

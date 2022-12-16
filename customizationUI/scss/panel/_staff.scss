@@ -333,3 +333,11 @@ ul#kb {
         background-position-y: 1rem;
     }
 }
+
+ul#trans,
+#content-trans {
+    background-color: $color-best--4;
+    li.active {
+        background-color: $color-dark--2 !important;
+    }
+}

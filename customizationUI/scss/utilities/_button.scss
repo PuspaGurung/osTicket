@@ -36,6 +36,7 @@ input[type="submit"] {
         background-color: $color-primary--2 !important;
     }
 }
+
 button.red,
 input[name="cancel"],
 input.close {
@@ -48,6 +49,7 @@ input.close {
 }
 button[type="reset"],
 button[name="reset"],
+input[type="reset"],
 input[type="reset"],
 a.popup-dialog,
 .action-button {
