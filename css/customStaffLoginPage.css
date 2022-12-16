@@ -160,13 +160,17 @@ input[type="radio"],
 input[type="checkbox"] {
   height: auto !important;
   line-height: auto !important;
-  min-width: auto; }
+  min-width: auto;
+  margin-right: 5px; }
 
 .redactor-styles-on {
   border: none !important; }
 
 .redactor-styles {
-  height: auto !important; }
+  height: auto !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  margin-bottom: 1rem !important; }
 
 select,
 .select2-selection {
@@ -278,7 +282,7 @@ ul.select2-selection__rendered input {
 
 .table,
 table {
-  width: 100%;
+  width: 100% !important;
   border-collapse: collapse; }
   .table td,
   .table th,
@@ -470,6 +474,9 @@ table.ui-datepicker-calendar td {
 
 .tip_box .tip_menu {
   border-top: none; }
+
+.tip_box .floating-options {
+  top: 1.7rem; }
 
 .warning-banner {
   height: auto;

@@ -38,12 +38,16 @@ input[type="checkbox"] {
     height: auto !important;
     line-height: auto !important;
     min-width: auto;
+    margin-right: 5px;
 }
 .redactor-styles-on {
     border: none !important;
 }
 .redactor-styles {
     height: auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-bottom: 1rem !important;
 }
 select,
 .select2-selection {

@@ -1,6 +1,6 @@
 .table,
 table {
-    width: 100%;
+    width: 100% !important;
     border-collapse: collapse;
 
     td,
@@ -18,6 +18,9 @@ table {
     td {
         border: 1px solid $color-best--3 !important;
     }
+    // td[colspan="2"] > div {
+    //     display: flex;
+    // }
     th {
         background-color: $color-dark--1 !important;
         color: $color-best--1 !important;
@@ -63,6 +66,6 @@ table td th {
     border: 1px solid $color-best--3 !important;
 }
 
-table.list{
+table.list {
     background-color: $color-best--4;
 }
