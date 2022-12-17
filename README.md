@@ -1,4 +1,4 @@
-# Mat-Norge Helpdesk used osTicket
+# Mat-Norge Helpdesk use osTicket
 
 **osTicket** is a widely-used open source support ticket system. It seamlessly
 integrates inquiries created via email, phone and web-based forms into a
