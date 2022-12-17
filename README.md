@@ -167,12 +167,12 @@ There are three custom css file (compiled scss files) located in css folder (in 
 
 ## How to upgrade osTicket in this project
 
-- if you are on "develop" branch then checkout to branch "matnorge-helpdesk-v1.17.x"
-- create new branch (you can give branch name "like matnorge-helpdesk-v[write latest version-number of osTicket]" )
+- if you are on "develop" branch then checkout to "matnorge-helpdesk-v1.17.x" branch
+- create new branch (you can give branch name like "matnorge-helpdesk-v[write-latest-version-number-of-osTicket]" )
 - checkout to newly created branch
-- follow the below steps:
-  1. git remote add upstream https://github.com/osTicket (here upstream is the new remote branch, you can give the name as you like)
-  2. git fetch upstream
+- write the following git commmands:
+  1. sudo git remote add upstream https://github.com/osTicket/osTicket.git (here upstream is the new remote branch, you can give the name as you like)
+  2. sudo git fetch upstream
   3. git merge upstream/latest-branch-of-osTicket (basically latest version)
 
 Please watch the osTicket youtube video tutorial regarding How to Install/Upgrade osTicket Using Github
