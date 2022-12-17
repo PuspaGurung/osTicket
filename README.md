@@ -164,3 +164,16 @@ There are three custom css file (compiled scss files) located in css folder (in 
 1. customClientPanel.css : this style works for client panel UI and it is imported in the directory:: includes > client > header.inc.php in the header section.
 2. customStaffLoginPage.css : this style works for staff login pages UI and it is imported in the directory:: includes > staff > login.header.php in the header section.
 3. customStaffPanel.css : this style works for staff panel (after logged in) UI and it is imported in the directory:: includes > staff > header.inc.php in the header section.
+
+## How to upgrade osTicket in this project
+
+- if you are on "develop" branch then checkout to branch "matnorge-helpdesk-v1.17.x"
+- create new branch (you can give branch name "like matnorge-helpdesk-v[write latest version-number of osTicket]" )
+- checkout to newly created branch
+- follow the below steps:
+  1. git remote add upstream https://github.com/osTicket (here upstream is the new remote branch, you can give the name as you like)
+  2. git fetch upstream
+  3. git merge upstream/latest-branch-of-osTicket (basically latest version)
+
+Please watch the osTicket youtube video tutorial regarding How to Install/Upgrade osTicket Using Github
+https://www.youtube.com/watch?v=0R4xu118LzM&ab_channel=osTicket
