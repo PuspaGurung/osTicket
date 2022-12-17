@@ -9,11 +9,19 @@
     @include respond-mediaQuery(laptop) {
         padding: 0 5%;
     }
+    @include respond-mediaQuery(phone) {
+        flex-flow: column;
+        flex-flow: column-reverse;
+        padding-bottom: 1rem;
+    }
     #logo {
         display: inline-block;
         width: 20rem;
         height: auto;
         line-height: 0;
+        @include respond-mediaQuery(phone) {
+            width: auto;
+        }
         img {
             max-height: none;
             max-width: 33rem;
@@ -95,7 +103,11 @@ ul#nav {
     border: none;
     box-shadow: none !important;
     height: auto;
-
+    @include respond-mediaQuery(ipad) {
+        display: flex;
+        flex-flow: row wrap;
+        padding: 5px;
+    }
     li {
         margin: 0;
         padding: 0;
@@ -120,6 +132,9 @@ ul#nav {
             &:hover {
                 background-color: $color-dark--1;
                 color: $color-best--1;
+            }
+            @include respond-mediaQuery(ipad) {
+                padding-left: 6rem;
             }
         }
     }
@@ -154,6 +169,9 @@ ul#nav {
         width: 100%;
         .searchbar {
             margin-bottom: 2rem;
+        }
+        @include respond-mediaQuery(ipad) {
+            margin: 0;
         }
         section {
             border: 0;
@@ -202,15 +220,28 @@ ul#nav {
         flex-flow: row-reverse;
         align-items: flex-start;
         justify-content: space-between;
+        @include respond-mediaQuery(ipad) {
+            flex-flow: column-reverse;
+            br {
+                display: none;
+            }
+        }
+
         .sidebar {
             width: 30%;
-
+            @include respond-mediaQuery(ipad) {
+                width: 100%;
+            }
             .front-page-button {
                 display: none;
+                margin: 0 0 1rem 0;
             }
         }
         .main-content {
             width: 70%;
+            @include respond-mediaQuery(ipad) {
+                width: 100%;
+            }
             .search-form {
                 padding: 2rem;
                 background-color: rgba($color-best--3, $alpha: 0.6);
@@ -244,18 +275,30 @@ ul#nav {
     }
 
     #breadcrumbs {
-        background-color: $color-primary--1;
-        color: $color-best--1;
-        padding: 1rem 2rem !important;
+        background-color: $color-dark--2;
+        color: $color-primary--1;
+        padding: 1.5rem 2rem !important;
+        font-size: 3rem;
+        display: flex;
+        align-items: center;
         a {
             margin: 5px;
+            color: $color-best--1;
+            font-size: 1.7rem;
             &:hover {
-                color: $color-secondary--1;
+                color: $color-primary--1;
             }
         }
     }
     .buttons {
         text-align: left !important;
+    }
+    .span8,
+    .span4 {
+        @include respond-mediaQuery(ipad) {
+            width: 100%;
+            margin: 0 0 1rem 0;
+        }
     }
 }
 
@@ -268,6 +311,47 @@ ul#kb {
     h4 {
         a {
             font-size: 1.7rem !important;
+        }
+    }
+    div[style="padding-bottom:15px;"] {
+        display: none;
+    }
+    .popular-faq {
+        border-bottom: 1px solid rgba($color-dark--1, 0.08);
+        display: flex;
+        align-items: center;
+        &:last-child {
+            border-bottom: none;
+        }
+
+        a {
+            flex: 1;
+            padding: 1rem 0;
+        }
+        i {
+            margin-right: 1rem;
+        }
+    }
+}
+#faq {
+    padding: 1rem 0;
+    margin-top: 5px;
+    ol {
+        border-top: none;
+        margin: 0;
+        padding: 0;
+        li {
+            a {
+                padding: 1rem 1rem 1rem 3rem;
+                color: $color-dark--2;
+                font-size: 1.7rem;
+                border-bottom-color: rgba($color-dark--1, $alpha: 0.05);
+            }
+            &:last-child {
+                a {
+                    border-bottom: none;
+                }
+            }
         }
     }
 }
@@ -302,6 +386,13 @@ form#clientLogin {
     @include boxShadow(none);
     & > div {
         display: flex !important;
+        @include respond-mediaQuery(phone) {
+            display: flex;
+            flex-flow: column;
+        }
+    }
+    @include respond-mediaQuery(ipad) {
+        background-image: none;
     }
     .login-box {
         width: 40%;
@@ -329,6 +420,26 @@ form#clientLogin {
         display: flex;
         flex-flow: column;
         align-items: flex-start;
+        @include respond-mediaQuery(phone) {
+            background-color: $color-best--1;
+            padding: 1.5rem !important;
+            margin-top: 1rem;
+        }
+    }
+    .login-box,
+    .instructions {
+        @include respond-mediaQuery(phone) {
+            width: 100%;
+            margin-bottom: 1rem;
+            padding-right: 0;
+            border-right: 0;
+
+            a {
+                width: 100%;
+                margin-left: 0;
+                text-align: center;
+            }
+        }
     }
 }
 
@@ -343,6 +454,22 @@ form#clientLogin {
         align-items: center;
         justify-content: flex-end;
         flex: 1;
+        @include respond-mediaQuery(phone) {
+            float: none !important;
+            width: 100%;
+            justify-content: flex-start;
+            select {
+                flex: 1;
+            }
+        }
+    }
+    @include respond-mediaQuery(phone) {
+        display: block;
+        input {
+            width: 100% !important;
+            flex: 1;
+            margin-bottom: 1rem;
+        }
     }
 }
 
@@ -364,4 +491,16 @@ select,
 textarea,
 .redactor-styles {
     height: 5rem !important;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    @include respond-mediaQuery(phone) {
+        width: 100%;
+    }
+}
+input[type="tel"] {
+    @include respond-mediaQuery(phone) {
+        margin-bottom: 1rem;
+    }
 }
