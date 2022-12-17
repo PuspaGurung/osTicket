@@ -6,6 +6,9 @@
     flex-flow: row-reverse;
     align-items: center;
     justify-content: space-between;
+    @include respond-mediaQuery(laptop) {
+        padding: 0 5%;
+    }
     #logo {
         display: inline-block;
         width: 20rem;
@@ -126,6 +129,9 @@ ul#nav {
 #content {
     margin: 0;
     padding: 3rem 10%;
+    @include respond-mediaQuery(laptop) {
+        padding: 3rem 5%;
+    }
     .form-header {
         background-color: $color-support--2;
         background-color: $color-primary--2;

@@ -605,6 +605,9 @@ hr {
   flex-flow: row-reverse;
   align-items: center;
   justify-content: space-between; }
+  @media (max-width: 115em) {
+    #header {
+      padding: 0 5%; } }
   #header #logo {
     display: inline-block;
     width: 20rem;
@@ -716,6 +719,9 @@ ul#nav {
 #content {
   margin: 0;
   padding: 3rem 10%; }
+  @media (max-width: 115em) {
+    #content {
+      padding: 3rem 5%; } }
   #content .form-header {
     background-color: #666666;
     background-color: #36bc21;
