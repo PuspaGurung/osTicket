@@ -592,6 +592,9 @@ a,
 a.field-config {
   margin-left: 2rem; }
 
+hr {
+  margin: 1rem 0; }
+
 #warning_bar {
   display: none; }
 
