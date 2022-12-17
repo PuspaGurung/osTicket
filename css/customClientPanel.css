@@ -419,7 +419,8 @@ table.ui-datepicker-calendar td {
 #ticketThread .thread-body,
 #task_thread_container .thread-body {
   border-bottom-width: 3px !important;
-  border-bottom-color: #aaa !important; }
+  border-bottom-color: #aaa !important;
+  min-height: 9.5rem; }
   #ticketThread .thread-body p,
   #task_thread_container .thread-body p {
     line-height: 2.2rem;
