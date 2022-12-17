@@ -43,7 +43,7 @@ input.close {
     background-color: $color-danger--1;
     color: $color-best--1;
     &:hover {
-        background-color: $color-danger--1 !important;
+        background-color: rgba($color-danger--1, 0.9) !important;
         color: $color-best--1 !important;
     }
 }
@@ -53,11 +53,11 @@ input[type="reset"],
 input[type="reset"],
 a.popup-dialog,
 .action-button {
-    background: $color-support--2;
-    background-color: $color-support--2;
+    background: $color-support--2 !important;
+    background-color: $color-support--2 !important;
     color: $color-best--1 !important;
     &:hover {
-        background-color: $color-support--2 !important;
+        background-color: rgba($color-support--2, 0.9) !important;
         color: $color-best--1 !important;
     }
     i {
@@ -90,7 +90,7 @@ button.red {
 }
 button.green,
 .button.green {
-    background-color: $color-primary--1;
+    background-color: $color-primary--1 !important;
     &:hover {
         background-color: $color-primary--2 !important;
     }

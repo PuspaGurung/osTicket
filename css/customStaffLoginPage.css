@@ -61,7 +61,7 @@ input.close {
   button.red:hover,
   input[name="cancel"]:hover,
   input.close:hover {
-    background-color: #df554a !important;
+    background-color: rgba(223, 85, 74, 0.9) !important;
     color: #ffffff !important; }
 
 button[type="reset"],
@@ -70,8 +70,8 @@ input[type="reset"],
 input[type="reset"],
 a.popup-dialog,
 .action-button {
-  background: #666666;
-  background-color: #666666;
+  background: #666666 !important;
+  background-color: #666666 !important;
   color: #ffffff !important; }
   button[type="reset"]:hover,
   button[name="reset"]:hover,
@@ -79,7 +79,7 @@ a.popup-dialog,
   input[type="reset"]:hover,
   a.popup-dialog:hover,
   .action-button:hover {
-    background-color: #666666 !important;
+    background-color: rgba(102, 102, 102, 0.9) !important;
     color: #ffffff !important; }
   button[type="reset"] i,
   button[name="reset"] i,
@@ -116,7 +116,7 @@ button.red {
 
 button.green,
 .button.green {
-  background-color: #51c53e; }
+  background-color: #51c53e !important; }
   button.green:hover,
   .button.green:hover {
     background-color: #36bc21 !important; }
