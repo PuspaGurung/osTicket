@@ -149,6 +149,9 @@ textarea,
   .redactor-styles:focus {
     border-color: #51c53e !important; }
 
+textarea {
+  height: auto !important; }
+
 input[type="text"],
 input[type="email"] {
   min-width: 50%; }
@@ -598,60 +601,3 @@ hr {
 
 #warning_bar {
   display: none; }
-
-#loginBody {
-  background-color: #f7f9fa; }
-  #loginBody #brickwall,
-  #loginBody #blur {
-    display: none; }
-  #loginBody #loginBox {
-    -webkit-box-shadow: none !important;
-    -moz-box-shadow: none !important;
-    box-shadow: none !important;
-    background-color: #ffffff;
-    width: 30% !important;
-    left: 50% !important;
-    top: 50% !important;
-    margin: 0 !important;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    padding: 4rem; }
-    @media (max-width: 65em) {
-      #loginBody #loginBox {
-        width: 95% !important; } }
-    #loginBody #loginBox::after {
-      content: none; }
-    #loginBody #loginBox form {
-      width: 100%; }
-      #loginBody #loginBox form fieldset {
-        margin: 0; }
-      #loginBody #loginBox form input,
-      #loginBody #loginBox form button {
-        width: 100%; }
-    #loginBody #loginBox #logo a {
-      display: block;
-      height: auto; }
-    #loginBody #loginBox #login-message {
-      font-size: 1.6rem;
-      color: #333; }
-    #loginBody #loginBox h3 {
-      margin-bottom: 1rem;
-      display: block !important; }
-  #loginBody #company .content {
-    background-color: transparent;
-    border-radius: 0;
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
-    -ms-border-radius: 0;
-    -o-border-radius: 0;
-    color: #333;
-    text-shadow: none;
-    -webkit-box-shadow: none !important;
-    -moz-box-shadow: none !important;
-    box-shadow: none !important; }
-
-#poweredBy {
-  display: none !important; }

@@ -21,6 +21,9 @@ textarea,
         border-color: $color-primary--1 !important;
     }
 }
+textarea {
+    height: auto !important;
+}
 input[type="text"],
 input[type="email"] {
     min-width: 50%;
