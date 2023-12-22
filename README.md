@@ -120,40 +120,40 @@ osTicket is supported by several magical open source projects including:
 
 ## Customization osTicket for Mat-Norge Helpdesk
 
-In this project customization applies only on the user interface (UI) part of the osTicket.
-We follows the latest trends and technology in order to develope user interface looks modern and responsive.
-In addition we adopts the Mat-Norge color scheme that used as for key visual element of company identity.
+n this project, customization applies only to the user interface (UI) part of osTicket. We follow the latest trends and technology to develop
+a user interface that looks modern and responsive. Additionally, we adopt the Mat-Norge color scheme, which is used as a key visual element of the company's identity.
 
 ## Recommended developer setup for customizaiton osTicket UI
 
 - Install node
 - Install yarn to handle package.json scripts
-- After installed node and yarn, run the command: yarn (this install all packages that exists in package.json file, the command shoud be run in the root file directory)
-- In order to compile sass, run the command: yarn compile:sass (in root file directory)
+- After installing Node and Yarn, run the following command:
+
+1.  **yarn** (this installs all packages that exist in the package.json file; the command should be run in the root directory).
+2.  **yarn compile:sass** (in root file directory) to compile the sass
 
 ## Custom scss file directory
 
-All the custom scss files are located in the customizationUI folder (on root directory).
-Compiled css file are located in the css folder (root directory).
-Please see the package.json scripts to know about how we configure scripts to compile scss file.
+All the custom SCSS files are located in the 'customizationUI' folder (at the root directory).
+Compiled CSS files are located in the 'css' folder (at the root directory). Please refer to the package.json scripts to learn how we configure scripts to compile SCSS files.
 
 ## How to use custom css file
 
-There are three custom css file (compiled scss files) located in css folder (in root directory).
+There are three custom css file (compiled from scss) located in 'css' folder at the root directory.
 
-1. customClientPanel.css : this style works for client panel UI and it is imported in the directory:: includes > client > header.inc.php in the header section.
-2. customStaffLoginPage.css : this style works for staff login pages UI and it is imported in the directory:: includes > staff > login.header.php in the header section.
-3. customStaffPanel.css : this style works for staff panel (after logged in) UI and it is imported in the directory:: includes > staff > header.inc.php in the header section.
+1. customClientPanel.css : for client panel UI and is imported in the directory 'includes > client > header.inc.php' at the header section.
+2. customStaffLoginPage.css : for staff login pages UI and is imported in the directory 'includes > staff > login.header.php' at the header section.
+3. customStaffPanel.css : for staff panel (after logged in) UI and is imported in the directory 'includes > staff > header.inc.php' in the header section.
 
-## How to upgrade osTicket in this project
+## How to upgrade osTicket in this project Using Github
 
-- if you are on "develop" branch then checkout to "matnorge-helpdesk-v1.17.x" branch
-- create new branch (you can give branch name like "matnorge-helpdesk-v[write-latest-version-number-of-osTicket]" )
+- if you are on "develop" branch then checkout to 'matnorge-helpdesk-v1.17.x' branch
+- create new branch (you can name the branch, for example, 'matnorge-helpdesk-v[write-latest-version-number-of-osTicket]' )
 - checkout to newly created branch
 - write the following git commmands:
-  1. sudo git remote add upstream https://github.com/osTicket/osTicket.git (here upstream is the new remote branch, you can give the name as you like)
-  2. sudo git fetch upstream
-  3. git merge upstream/latest-branch-of-osTicket (basically latest version)
+  1. **sudo git remote add upstream https://github.com/osTicket/osTicket.git** (here upstream is the new remote branch, you can give the name as you like)
+  2. **sudo git fetch upstream**
+  3. **git merge upstream/latest-branch-of-osTicket** (basically latest version)
 
-Please watch the osTicket youtube video tutorial regarding How to Install/Upgrade osTicket Using Github
+Please watch the osTicket youtube video tutorial on how to install/upgrade osTicket Using Github
 https://www.youtube.com/watch?v=0R4xu118LzM&ab_channel=osTicket
