@@ -55,11 +55,13 @@ input[type="submit"]:hover {
 
 button.red,
 input[name="cancel"],
+input[value="Cancel"],
 input.close {
   background-color: #df554a;
   color: #ffffff; }
   button.red:hover,
   input[name="cancel"]:hover,
+  input[value="Cancel"]:hover,
   input.close:hover {
     background-color: rgba(223, 85, 74, 0.9) !important;
     color: #ffffff !important; }

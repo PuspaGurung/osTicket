@@ -55,11 +55,13 @@ input[type="submit"]:hover {
 
 button.red,
 input[name="cancel"],
+input[value="Cancel"],
 input.close {
   background-color: #df554a;
   color: #ffffff; }
   button.red:hover,
   input[name="cancel"]:hover,
+  input[value="Cancel"]:hover,
   input.close:hover {
     background-color: rgba(223, 85, 74, 0.9) !important;
     color: #ffffff !important; }
@@ -677,7 +679,8 @@ ul#nav {
       ul#nav > li > ul li:last-child {
         border-bottom: none !important; }
 
-nav#customQ_nav {
+nav#customQ_nav,
+nav {
   width: 100% !important;
   height: 6rem !important; }
 
@@ -685,13 +688,17 @@ ul#sub_nav {
   background-color: #51c53e;
   border: none !important;
   padding: 0 2rem;
-  line-height: initial;
-  height: 6rem !important; }
+  height: 100% !important; }
   ul#sub_nav > li a {
     background-position-x: 1rem !important; }
+  ul#sub_nav > li > a {
+    line-height: 6rem; }
+    ul#sub_nav > li > a i {
+      margin-top: 2rem !important; }
   ul#sub_nav li {
     border: none !important;
-    height: auto !important;
+    height: 100% !important;
+    display: inline-block;
     padding: 0 !important;
     -webkit-box-shadow: none !important;
     -moz-box-shadow: none !important;
@@ -703,12 +710,12 @@ ul#sub_nav {
     -o-border-radius: 0 !important; }
     ul#sub_nav li a {
       color: #ffffff !important;
-      padding: 2rem 3rem 2rem 3.5rem !important; }
+      padding: 0 3rem 0 3.5rem !important;
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center; }
       ul#sub_nav li a.active {
         background-color: #36bc21; }
-    ul#sub_nav li.item a i {
-      margin-left: 1rem;
-      margin-top: 0 !important; }
   ul#sub_nav li.item:hover {
     background-color: #666666 !important; }
   ul#sub_nav li.item .customQ-dropdown {

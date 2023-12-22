@@ -79,7 +79,8 @@ ul#nav {
         }
     }
 }
-nav#customQ_nav {
+nav#customQ_nav,
+nav {
     width: 100% !important;
     height: 6rem !important;
 }
@@ -87,32 +88,33 @@ ul#sub_nav {
     background-color: $color-primary--1;
     border: none !important;
     padding: 0 2rem;
-    line-height: initial;
-    height: 6rem !important;
+    height: 100% !important;
     & > li {
         a {
             background-position-x: 1rem !important;
         }
     }
+    & > li > a {
+        line-height: 6rem;
+        i {
+            margin-top: 2rem !important;
+        }
+    }
     li {
         border: none !important;
-        height: auto !important;
+        height: 100% !important;
+        display: inline-block;
         padding: 0 !important;
         @include boxShadow(none !important);
         @include borderRadious(0 !important);
         a {
             color: $color-best--1 !important;
-            padding: 2rem 3rem 2rem 3.5rem !important;
+            padding: 0 3rem 0 3.5rem !important;
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
             &.active {
                 background-color: $color-primary--2;
-            }
-        }
-        &.item {
-            a {
-                i {
-                    margin-left: 1rem;
-                    margin-top: 0 !important;
-                }
             }
         }
     }
