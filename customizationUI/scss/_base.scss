@@ -46,7 +46,7 @@ body {
     line-height: 2.5rem;
     scroll-behavior: smooth;
     text-rendering: optimizeSpeed;
-    font-family: $font-primary;
+    font-family: $font-regular;
 }
 main {
     position: relative;
@@ -97,7 +97,23 @@ h2 {
 }
 h3 {
 }
-
+.thread-body{
+    font-family: $font-regular !important;
+}
+.thread-body h1, 
+.thread-body h2, 
+.thread-body h3, 
+.thread-body h4, 
+.thread-body h5, 
+.thread-body h6, 
+.thread-body .h1, 
+.thread-body .h2, 
+.thread-body .h3, 
+.thread-body .h4, 
+.thread-body .h5, 
+.thread-body .h6{
+    font-family: $font-medium !important;
+}
 a,
 .link {
     max-height: none !important;

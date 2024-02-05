@@ -1,6 +1,6 @@
 // CLIENT HEADER
 #header {
-    padding: 0 10%;
+    padding: 1.5rem 10%;
     height: auto;
     display: flex;
     flex-flow: row-reverse;
@@ -28,6 +28,7 @@
             width: auto;
             height: auto;
             vertical-align: middle;
+            width: 100%;
         }
     }
     a:hover {

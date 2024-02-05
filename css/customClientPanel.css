@@ -1,3 +1,23 @@
+@font-face {
+  font-family: "rubikRegular";
+  src: url("./../../../assets/font/rubik/Rubik-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: "rubikMedium";
+  src: url("./../../../assets/font/rubik/Rubik-Medium.ttf") format("truetype");
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: "rubikBold";
+  src: url("./../../../assets/font/rubik/Rubik-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap; }
+
 /*----------------------------
 *** MEDIA-QUERY 
 ** Break points-
@@ -39,19 +59,19 @@ a.popup-dialog,
   .button:hover,
   a.popup-dialog:hover,
   .action-button:hover {
-    -webkit-box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08), 0 20px 20px rgba(0, 0, 0, 0.08) !important;
-    -moz-box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08), 0 20px 20px rgba(0, 0, 0, 0.08) !important;
-    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08), 0 4px 20px rgba(0, 0, 0, 0.08) !important; }
+    -webkit-box-shadow: 0 2px 20px rgba(9, 21, 16, 0.08), 0 20px 20px rgba(9, 21, 16, 0.08) !important;
+    -moz-box-shadow: 0 2px 20px rgba(9, 21, 16, 0.08), 0 20px 20px rgba(9, 21, 16, 0.08) !important;
+    box-shadow: 0 2px 20px rgba(9, 21, 16, 0.08), 0 4px 20px rgba(9, 21, 16, 0.08) !important; }
 
 .button,
 button[type="submit"],
 input[type="submit"] {
-  background-color: #51c53e !important; }
+  background-color: #008175 !important; }
 
 .button:hover,
 button[type="submit"]:hover,
 input[type="submit"]:hover {
-  background-color: #36bc21 !important; }
+  background-color: #018D80 !important; }
 
 button.red,
 input[name="cancel"],
@@ -118,10 +138,10 @@ button.red {
 
 button.green,
 .button.green {
-  background-color: #51c53e !important; }
+  background-color: #008175 !important; }
   button.green:hover,
   .button.green:hover {
-    background-color: #36bc21 !important; }
+    background-color: #018D80 !important; }
 
 input,
 select,
@@ -132,7 +152,7 @@ textarea,
   height: 4.5rem !important;
   outline: none;
   border: 1px solid #e2e5e8 !important;
-  border-bottom-color: #51c53e !important;
+  border-bottom-color: #008175 !important;
   color: #333;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
@@ -149,7 +169,7 @@ textarea,
   .select2-selection:focus,
   textarea:focus,
   .redactor-styles:focus {
-    border-color: #51c53e !important; }
+    border-color: #008175 !important; }
 
 textarea {
   height: auto !important; }
@@ -204,7 +224,7 @@ ul.select2-selection__rendered input {
   width: 15rem; }
 
 #overlay {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(9, 21, 16, 0.7);
   opacity: 1; }
 
 .dialog {
@@ -290,7 +310,7 @@ ul.select2-selection__rendered input {
   padding: 3rem 0; }
   #footer p {
     font-size: 1.7rem;
-    color: #000; }
+    color: #091510; }
   #footer #poweredBy {
     display: none !important; }
 
@@ -319,7 +339,7 @@ table {
     border: 1px solid #e2e5e8 !important; }
   .table th,
   table th {
-    background-color: #000 !important;
+    background-color: #091510 !important;
     color: #ffffff !important;
     border: 1px solid rgba(255, 255, 255, 0.2) !important;
     font-size: 1.7rem !important; }
@@ -339,7 +359,7 @@ table {
       background-color: transparent !important; }
 
 #ticketTable caption {
-  background-color: #36bc21;
+  background-color: #018D80;
   color: #ffffff;
   border: none; }
 
@@ -429,27 +449,27 @@ table.ui-datepicker-calendar td {
   #ticketThread .thread-body p,
   #task_thread_container .thread-body p {
     line-height: 2.2rem;
-    font-family: "Montserrat", sans-serif;
+    font-family: "rubikRegular", sans-serif;
     font-size: 1.7rem; }
 
 #ticketThread .thread-entry.message .header,
 #task_thread_container .thread-entry.message .header {
-  background-color: #51c53e;
+  background-color: #008175;
   color: #ffffff; }
 
 #ticketThread .thread-entry.message .header,
 #ticketThread .thread-entry.message .thread-body,
 #task_thread_container .thread-entry.message .header,
 #task_thread_container .thread-entry.message .thread-body {
-  border: 1px solid #51c53e; }
+  border: 1px solid #008175; }
 
 #ticketThread .thread-entry.message .header:after, #ticketThread .thread-entry.message .header:before, #ticketThread .thread-entry.message .header::before, #ticketThread .thread-entry.message .header::after,
 #task_thread_container .thread-entry.message .header:after,
 #task_thread_container .thread-entry.message .header:before,
 #task_thread_container .thread-entry.message .header::before,
 #task_thread_container .thread-entry.message .header::after {
-  border-left-color: #51c53e !important;
-  border-right-color: #51c53e !important; }
+  border-left-color: #008175 !important;
+  border-right-color: #008175 !important; }
 
 #ticketThread .thread-entry.response .header,
 #ticketThread .thread-entry.response .thread-body,
@@ -470,10 +490,10 @@ table.ui-datepicker-calendar td {
 
 #ticketThread blockquote p,
 #task_thread_container blockquote p {
-  font-family: "Montserrat", sans-serif;
+  font-family: "rubikRegular", sans-serif;
   font-size: 1.7rem;
   line-height: 2.2rem;
-  color: #000; }
+  color: #091510; }
 
 .tip_box .tip_content {
   border: 1px solid #e2e5e8; }
@@ -545,7 +565,7 @@ body {
   line-height: 2.5rem;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  font-family: "rubikRegular", sans-serif; }
 
 main {
   position: relative; }
@@ -583,6 +603,23 @@ img {
 h1 {
   line-height: 4rem; }
 
+.thread-body {
+  font-family: "rubikRegular", sans-serif !important; }
+
+.thread-body h1,
+.thread-body h2,
+.thread-body h3,
+.thread-body h4,
+.thread-body h5,
+.thread-body h6,
+.thread-body .h1,
+.thread-body .h2,
+.thread-body .h3,
+.thread-body .h4,
+.thread-body .h5,
+.thread-body .h6 {
+  font-family: "rubikMedium", sans-serif !important; }
+
 a,
 .link {
   max-height: none !important;
@@ -592,7 +629,7 @@ a,
   margin: 0; }
   a:hover,
   .link:hover {
-    color: #51c53e;
+    color: #008175;
     border-bottom: none; }
 
 a.field-config {
@@ -605,7 +642,7 @@ hr {
   display: none; }
 
 #header {
-  padding: 0 10%;
+  padding: 1.5rem 10%;
   height: auto;
   display: flex;
   flex-flow: row-reverse;
@@ -632,7 +669,8 @@ hr {
       max-width: 33rem;
       width: auto;
       height: auto;
-      vertical-align: middle; }
+      vertical-align: middle;
+      width: 100%; }
   #header a:hover {
     border-bottom: none; }
   #header .pull-right,
@@ -649,9 +687,9 @@ hr {
       padding: 1rem 2rem; }
       #header .pull-right p:first-child,
       #header .flush-right p:first-child {
-        background-color: #51c53e;
+        background-color: #008175;
         margin-right: 5px;
-        color: #ffe400;
+        color: #ffd000;
         font-weight: 500; }
         #header .pull-right p:first-child a,
         #header .flush-right p:first-child a {
@@ -732,7 +770,7 @@ ul#nav {
       -ms-border-radius: 0;
       -o-border-radius: 0; }
       ul#nav li a.active, ul#nav li a:hover {
-        background-color: #000;
+        background-color: #091510;
         color: #ffffff; }
       @media (max-width: 49em) {
         ul#nav li a {
@@ -746,11 +784,11 @@ ul#nav {
       padding: 3rem 5%; } }
   #content .form-header {
     background-color: #666666;
-    background-color: #36bc21;
+    background-color: #018D80;
     color: #ffffff;
     padding: 1rem 1.5rem; }
   #content h1 {
-    color: #000;
+    color: #091510;
     font-weight: 500;
     margin-bottom: 1rem; }
   #content .content {
@@ -797,7 +835,7 @@ ul#nav {
         padding: 1rem 0;
         margin-bottom: 0; }
         #content .sidebar section a:hover {
-          color: #51c53e; }
+          color: #008175; }
       #content .sidebar section div:last-child a {
         border-bottom: none; }
   #content #landing_page {
@@ -847,7 +885,7 @@ ul#nav {
         margin-bottom: 2rem; }
   #content #breadcrumbs {
     background-color: #333;
-    color: #51c53e;
+    color: #008175;
     padding: 1.5rem 2rem !important;
     font-size: 3rem;
     display: flex;
@@ -857,7 +895,7 @@ ul#nav {
       color: #ffffff;
       font-size: 1.7rem; }
       #content #breadcrumbs a:hover {
-        color: #51c53e; }
+        color: #008175; }
   #content .buttons {
     text-align: left !important; }
   @media (max-width: 49em) {
@@ -875,7 +913,7 @@ ul#kb {
   ul#kb div[style="padding-bottom:15px;"] {
     display: none; }
   ul#kb .popular-faq {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    border-bottom: 1px solid rgba(9, 21, 16, 0.08);
     display: flex;
     align-items: center; }
     ul#kb .popular-faq:last-child {
@@ -897,7 +935,7 @@ ul#kb {
       padding: 1rem 1rem 1rem 3rem;
       color: #333;
       font-size: 1.7rem;
-      border-bottom-color: rgba(0, 0, 0, 0.05); }
+      border-bottom-color: rgba(9, 21, 16, 0.05); }
     #faq ol li:last-child a {
       border-bottom: none; }
 
@@ -952,11 +990,11 @@ form#clientLogin {
   form#clientLogin a {
     padding: 1rem;
     margin: 1rem 0 0 1rem;
-    border: 1px solid #51c53e;
-    color: #51c53e;
+    border: 1px solid #008175;
+    color: #008175;
     display: inline-block; }
     form#clientLogin a:hover {
-      background-color: #51c53e;
+      background-color: #008175;
       color: #ffffff;
       margin: 1rem 0 0 1rem; }
   form#clientLogin .instructions {
