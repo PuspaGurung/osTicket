@@ -1,12 +1,13 @@
 {
   "scripts": {
-    "adminLoginPage:sass": "node-sass  customizationUI/scss/mainStaffLogin.scss css/customStaffLoginPage.css -w",
-    "clientPanel:sass": "node-sass  customizationUI/scss/mainClientPanel.scss css/customClientPanel.css -w",
-    "adminPanel:sass": "node-sass  customizationUI/scss/mainStaffPanel.scss css/customStaffPanel.css -w",
-    "compile:sass": "concurrently --kill-others  \"yarn run adminLoginPage:sass\" \"yarn run adminPanel:sass\" \"yarn run clientPanel:sass\" -w"
+    "adminLoginPage:sass": "sass customizationUI/scss/mainStaffLogin.scss css/customStaffLoginPage.css --watch",
+    "clientPanel:sass": "sass customizationUI/scss/mainClientPanel.scss css/customClientPanel.css --watch",
+    "adminPanel:sass": "sass customizationUI/scss/mainStaffPanel.scss css/customStaffPanel.css --watch",
+    "compile:sass": "concurrently --kill-others \"yarn run adminLoginPage:sass\" \"yarn run adminPanel:sass\" \"yarn run clientPanel:sass\""
   },
   "dependencies": {
     "concurrently": "^7.6.0",
-    "node-sass": "^8.0.0"
-  }
+    "sass": "^1.85.1"
+  },
+  "packageManager": "yarn@4.6.0+sha512.5383cc12567a95f1d668fbe762dfe0075c595b4bfff433be478dbbe24e05251a8e8c3eb992a986667c1d53b6c3a9c85b8398c35a960587fbd9fa3a0915406728"
 }
