@@ -1,11 +1,14 @@
 form {
+
     p,
     .buttons {
         text-align: left !important;
     }
+
     p {
         margin-top: 1.5rem;
     }
+
     table {
         margin-bottom: 1rem;
     }
@@ -16,5 +19,14 @@ form#task_reply,
 form#reply {
     .redactor-styles {
         max-width: 100% !important;
+    }
+}
+
+form#clientLogin>div {
+    @include respond-mediaQuery(phone) {
+        width: 100% !important;
+        input {
+            width: 100%;
+        }
     }
 }

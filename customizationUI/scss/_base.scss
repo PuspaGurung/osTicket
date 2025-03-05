@@ -47,6 +47,11 @@ body {
     scroll-behavior: smooth;
     text-rendering: optimizeSpeed;
     font-family: $font-regular;
+
+    @include respond-mediaQuery(phone) {
+        height: 6.5rem !important;
+        font-size: 2.2rem;
+    }
 }
 main {
     position: relative;

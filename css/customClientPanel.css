@@ -430,7 +430,7 @@ table.ticket_info > tbody > tr > td {
 
 .tip_box table th,
 table td th {
-  background-color: #eee !important;
+  background-color: #ccc !important;
   color: #333 !important;
   border: 1px solid #e2e5e8 !important;
 }
@@ -445,7 +445,7 @@ table td th em {
 }
 
 table.list {
-  background-color: #eee;
+  background-color: #ccc;
 }
 
 form p,
@@ -463,6 +463,15 @@ form#task_note .redactor-styles,
 form#task_reply .redactor-styles,
 form#reply .redactor-styles {
   max-width: 100% !important;
+}
+
+@media (max-width: 37.5em) {
+  form#clientLogin > div {
+    width: 100% !important;
+  }
+  form#clientLogin > div input {
+    width: 100%;
+  }
 }
 
 #ui-datepicker-div {
@@ -609,6 +618,13 @@ table.ui-datepicker-calendar td {
   margin-left: 0 !important;
 }
 
+#msg_notice,
+#msg_error {
+  min-height: 36px !important;
+  line-height: 26px;
+  height: auto;
+}
+
 html {
   /**
     * size is measure in the basis of REMs, (pretty easier for responsive layout)
@@ -659,6 +675,12 @@ body {
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   font-family: "rubikRegular", sans-serif;
+}
+@media (max-width: 37.5em) {
+  body {
+    height: 6.5rem !important;
+    font-size: 2.2rem;
+  }
 }
 
 main {
@@ -750,7 +772,7 @@ hr {
 }
 
 #header {
-  padding: 1.5rem 10%;
+  padding: 1.5rem 10% !important;
   height: auto;
   display: flex;
   flex-flow: row-reverse;
@@ -759,7 +781,7 @@ hr {
 }
 @media (max-width: 115em) {
   #header {
-    padding: 0 5%;
+    padding: 1.5rem 5% !important;
   }
 }
 @media (max-width: 37.5em) {
@@ -771,19 +793,18 @@ hr {
 }
 #header #logo {
   display: inline-block;
-  width: 20rem;
+  width: 25rem;
   height: auto;
   line-height: 0;
 }
 @media (max-width: 37.5em) {
   #header #logo {
-    width: auto;
+    width: 22rem;
+    margin-bottom: 2rem;
   }
 }
 #header #logo img {
   max-height: none;
-  max-width: 33rem;
-  width: auto;
   height: auto;
   vertical-align: middle;
   width: 100%;
@@ -865,10 +886,15 @@ hr {
 ul#nav {
   margin: 0;
   padding: 1.5rem 10%;
-  background: #333;
+  background: #222;
   border: none;
   box-shadow: none !important;
   height: auto;
+}
+@media (max-width: 115em) {
+  ul#nav {
+    padding: 1.5rem 5%;
+  }
 }
 @media (max-width: 49em) {
   ul#nav {
@@ -877,22 +903,30 @@ ul#nav {
     padding: 5px;
   }
 }
+@media (max-width: 37.5em) {
+  ul#nav {
+    padding: 5px 10px;
+  }
+}
 ul#nav li {
   margin: 0;
   padding: 0;
   list-style: none;
   display: inline;
-  margin-right: 1rem;
+  margin-right: 2rem;
+}
+ul#nav li:last-child {
+  margin-right: 0;
 }
 ul#nav li a {
   text-transform: uppercase;
   height: auto;
   display: inline-block;
   border: 0;
-  color: #ffffff;
+  color: #ccc;
   margin: 0;
   line-height: 0;
-  padding: 0 1rem 0 3.5rem;
+  padding: 0 1rem 0 2.5rem;
   height: 5rem;
   line-height: 5rem;
   position: relative;
@@ -901,15 +935,19 @@ ul#nav li a {
   -moz-border-radius: 0;
   -ms-border-radius: 0;
   -o-border-radius: 0;
+  color: rgba(255, 255, 255, 0.7);
+  background-position: left !important;
 }
 ul#nav li a.active, ul#nav li a:hover {
-  background-color: #091510;
+  background-color: transparent !important;
   color: #ffffff;
-  display: none !im;
 }
-@media (max-width: 49em) {
+@media (max-width: 37.5em) {
   ul#nav li a {
-    padding-left: 6rem;
+    padding-left: 3.5rem;
+    font-size: 1.8rem;
+    height: 4rem;
+    line-height: 4rem;
   }
 }
 
@@ -920,6 +958,11 @@ ul#nav li a.active, ul#nav li a:hover {
 @media (max-width: 115em) {
   #content {
     padding: 3rem 5%;
+  }
+}
+@media (max-width: 37.5em) {
+  #content {
+    padding: 3rem 10px;
   }
 }
 #content .form-header {
@@ -1146,6 +1189,14 @@ ul#kb .popular-faq i {
   margin-top: 1rem;
   margin-bottom: 4rem;
 }
+@media (max-width: 37.5em) {
+  #ticketForm {
+    padding: 0;
+  }
+  #ticketForm hr {
+    border-top: none !important;
+  }
+}
 
 #ticketInfo h1 {
   border-bottom: none;
@@ -1163,6 +1214,11 @@ form#clientLogin {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
+}
+@media (max-width: 37.5em) {
+  form#clientLogin {
+    padding: 10px 8px;
+  }
 }
 form#clientLogin > div {
   display: flex !important;
@@ -1273,6 +1329,19 @@ a.popup-dialog,
   height: 5rem !important;
   line-height: 4.8rem !important;
 }
+@media (max-width: 37.5em) {
+  button,
+  input[type=button],
+  input[type=reset],
+  input[type=submit],
+  .button,
+  a.popup-dialog,
+  .action-button {
+    height: 6.5rem !important;
+    line-height: 6.5rem !important;
+    font-size: 2rem;
+  }
+}
 
 input,
 select,
@@ -1280,6 +1349,15 @@ select,
 textarea,
 .redactor-styles {
   height: 5rem !important;
+}
+@media (max-width: 37.5em) {
+  input,
+  select,
+  .select2-selection,
+  textarea,
+  .redactor-styles {
+    height: 6.5rem !important;
+  }
 }
 
 @media (max-width: 37.5em) {
